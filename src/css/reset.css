@@ -26,10 +26,16 @@
 
 /* Reset styles */
 
+
 * {
   margin: 0;
   padding: 0;
   list-style: none;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
