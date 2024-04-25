@@ -1,4 +1,38 @@
+:root {
+  --primary-font: 'Inter Tight', sans-serif;
+  --logo-font: 'Inter Tight', sans-serif;
+  /* Color */
+  --primary-txt-clr: #FAFAFA;
+  --primary-bg-clr: #1C1D20;
+  --secondarybg-clr: #242527;
+  --third-clr: #3B3B3B;
+  --primary-clr: #ED3B44;
+  --hover-btn-clr: #E0373F;
+  --succes-clr: #3CBC81;
+  --error-clr: #E74A3B;
+
+
+  /* Others */
+  --border: 1px solid;
+  --primary-bor-rad: 60px;
+
+  /* Animation */
+  --anim-superfast: 150ms ease-in;
+  --anim-fast: 300ms ease-in;
+  --anim-slow: 800ms ease;
+
+}
+
+
 /* Reset styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,

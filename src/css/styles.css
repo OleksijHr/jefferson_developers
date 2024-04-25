@@ -22,38 +22,11 @@
 
 @import url('./reviews.css');
 
-@import url('./worktogether.css');
+@import url('./work-together.css');
 
 @import url('./modal.css');
 
 @import url('./footer.css');
-
-
-
-:root {
-  --primary-font: 'Inter Tight', sans-serif;
-  --logo-font: 'Inter Tight', sans-serif;
-  /* Color */
-  --primary-txt-clr: #FAFAFA;
-  --primary-bg-clr: #1C1D20;
-  --secondarybg-clr: #242527;
-  --third-clr: #3B3B3B;
-  --primary-clr: #ED3B44;
-  --hover-btn-clr: #E0373F;
-  --succes-clr: #3CBC81;
-  --error-clr: #E74A3B;
-  
-  
-  /* Others */
-  --border: 1px solid;
-  --primary-bor-rad: 60px;
-
-  /* Animation */
-    --anim-superfast: 150ms ease-in;
-    --anim-fast: 300ms ease-in;
-    --anim-slow: 800ms ease;
-  
-}
 
 html {
   scroll-behavior: smooth;
@@ -68,6 +41,14 @@ body {
   letter-spacing: -0.02em;
   color: var(--primary-txt-clr);
   background-color:var(--primary-bg-clr);
+
+  margin: 0 auto;
+}
+
+.container {
+  position: relative;
+  padding: 0 32px;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 767px) {
@@ -102,10 +83,4 @@ body {
   .container {
     max-width: 1440px;
   }
-}
-
-.container {
-  position: relative;
-  padding: 0 32px;
-  margin: 0 auto;
 }
