@@ -1,0 +1,27 @@
+.hero {
+    background-image: url('path/to/background-image.png');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff; /* колір тексту */
+    padding: 100px 0; /* внутрішні відступи */
+  }
+  
+  .hero-content {
+    text-align: center;
+  }
+  
+  .social-links {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .social-links li {
+    display: inline-block;
+    margin: 0 10px; /* відступи між посиланнями */
+  }
+  
+  .contact-email {
+    display: block;
+    margin-top: 20px; /* відступ від соц. мереж до email */
+  }
+  
