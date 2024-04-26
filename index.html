@@ -21,7 +21,7 @@
     />
     
     <script type="module" crossorigin src="/jefferson_developers/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/jefferson_developers/assets/index-6a5c1b37.css">
+    <link rel="stylesheet" href="/jefferson_developers/assets/index-05b7d42c.css">
   </head>
   <body>
     <!-- Header -->
@@ -428,22 +428,108 @@
 
       <!-- Reviews -->
       <!-- Olha Matviienko -->
-      <p>
-  Текст “Reviews" є заголовком секції. "Перелік відгуків необхідно реалізувати
-  за допомогою ul у вигляді горизонтального слайдера
-  (https://swiperjs.com/swiper-api). Користувач повинен мати змогу взаємодіяти
-  зі слайдером через мишу, клавіатуру (клавіш Tab та стрілок) або сенсорний
-  екран. У разі досягнення кінця списку елементів, кнопка відповідно до
-  вказаного напрямку повинна бути задізейблена (користувач більше не може
-  взаємодіяти з нею, і вона не реагує на події clickу або натискання клавіші).
-  Задізейблена кнопка візуальною змінюється, що підкреслює її неактивний стан.
-  Перелік відгуків слід отримувати з backendа. Якщо з сервера буде повернута
-  помилка - користувачеві слід повідомити про це за допомогою вспливаючого
-  повідомлення, а замість переліку відгуків відмалювати текст-заглушку ""Not
-  found"""
-</p>
-<section class="reviews-section">
-  <div class="container"></div>
+      <section class="reviews-section" id="reviews">
+  <div class="reviews-wrap container">
+    <h2 class="reviews-title-h2">REVIEWS</h2>
+
+    <ul class="menu-reviews-list list">
+      <li class="menu-reviews-item menu-item">
+        <img
+          class="icon-reviews-img"
+          srcset="
+            ../img/reviews/natalia@1.jpg 1x,
+            ../img/reviews/natalia@2.jpg 2x
+          "
+          src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADAAMAMBIgACEQEDEQH/xAAwAAACAwEBAAAAAAAAAAAAAAAGBwQFCAACAQADAQEAAAAAAAAAAAAAAAABAgQAA//aAAwDAQACEAMQAAAAKCyYoQasuAHZPVZBlzf0S9nfRGXEckZ2a2/wsaVoOEdMVbj92olkkToXs7XVri9yjf/EADIQAAIBAwIDBAcJAAAAAAAAAAECAwQFEQAGEBIxBxMhQRQiMlFhYoEVM0JSU2NxkcH/2gAIAQEAAT8A2RtCm29QJLJHm4zxgzueqftLq4V9NbqOesqX5YokLMdP2g3u4XBEolEMTHCIqCQ6p75uW2xma7UZmphgmRFwyj6agniqIIp4mDRyIHRh5hhkHW79kUG4aaSSJI4LiPFJwPb+WXh2rXUx0lHbE6yN3sn8DwXWz6ijoUiMwUSOch2ONJdab7PkkkUAKQjhmGPW+PuOttlBb3jiAEMdRKIcfkJ5hx37OlRuCsLn1I2SIfQa2lVUjyLT1MMcsOcpkZwRqjqOS61kUjU/osoj5eaQA5Hy6thQmu7tcIKnCgdPBFHG/wBQJ62vlJ+8nlYf3q3XWahlRk/Ceh1QbrpI6A1jW1+9d+VGEuYy+CegOtqCQ2OmmlOZJy8zn4u3C8VXodrrqj9OBzqSd55Wdj1JwPdoqCNW2KN62mjknWGNpFDyN0UHzOrTWWmalhgt1bBPHFGqDu5FcgKPPHCq33Q33ZlwDvHBcRGEeDPt/NFpOulOfDz1jSNJE6yRuyOpyGU4IOou02ODaCc8zSXoq8I/yY6//8QAHREAAgICAwEAAAAAAAAAAAAAAAECEQNxEDEyQf/aAAgBAgEBPwBjySUhO0mTfWzJCSdkPEdH0q+P/8QAHhEAAgICAgMAAAAAAAAAAAAAAQIAAxExEEFRYXH/2gAIAQMBAT8AEWlSgjDBI8GVjfyVWIy4O5Ycux9zrn//2Q=="
+          width="48"
+          height="48"
+          alt="avatar Natalia"
+        />
+        <div class="container-reviews-title-text">
+          <h3 class="reviews-title-h3">Natalia</h3>
+          <p class="reviews-text">
+            Work with was extraordinary! He turned out to be a very competent
+            and responsible specialist. The projects were completed on time and
+            the result exceeded my expectations
+          </p>
+        </div>
+      </li>
+      <li class="menu-reviews-item menu-item">
+        <img
+          class="icon-reviews-img"
+          srcset="
+            ../img/reviews/dmytro@1.jpg 1x,
+            ../img/reviews/dmytro@2.jpg 2x
+          "
+          src="../img/reviews/dmytro@1.jpg"
+          width="48"
+          height="48"
+          alt="avatar Dmytro"
+        />
+        <div class="container-reviews-title-text">
+          <h3 class="reviews-title-h3">Dmytro</h3>
+          <p class="reviews-text">
+            I have the honor to recommend him as an exceptional professional in
+            his field. His knowledge and expertise are undeniable. Cooperation
+            with him always brings impressive results.
+          </p>
+        </div>
+      </li>
+      <li class="menu-reviews-item menu-item">
+        <img
+          class="icon-reviews-img"
+          srcset="../img/reviews/anna@1.jpg 1x, ../img/reviews/anna@2.jpg 2x"
+          src="../img/reviews/anna@1.jpg"
+          width="48"
+          height="48"
+          alt="avatar Anna"
+        />
+        <div class="container-reviews-title-text">
+          <h3 class="reviews-title-h3">Anna</h3>
+          <p class="reviews-text">
+            The developed project impresses with its quality and efficiency. The
+            code is cleanly written and the functionality exceeds expectations.
+            Extremely satisfied with the cooperation!
+          </p>
+        </div>
+      </li>
+      <li class="menu-reviews-item menu-item">
+        <img
+          class="icon-reviews-img"
+          srcset="
+            ../img/reviews/ivetta@1.jpg 1x,
+            ../img/reviews/ivetta@2.jpg 2x
+          "
+          src="../img/reviews/ivetta@1.jpg"
+          width="48"
+          height="48"
+          alt="avatar Ivetta"
+        />
+        <div class="container-reviews-title-text">
+          <h3 class="reviews-title-h3">Ivetta</h3>
+          <p class="reviews-text">
+            Thanks for the excellent work on the project! His talent and
+            professionalism deserve recognition. I recommend it to everyone who
+            is looking for an expert in the field of software development.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-----button-arrow-left-right-- -->
+  <div class="arrow-icon">
+    <button type="button" class="round-button left-arrow">
+      <svg class="arrow-narrow-left" width="32" height="32">
+        <use href="/src/img/icons.svg#icon-arrow-left"></use>
+      </svg>
+    </button>
+    <button type="button" class="round-button right-arrow">
+      <svg class="arrow-narrow-right" width="32" height="32">
+        <use href="/src/img/icons.svg#icon-arrow-right"></use>
+      </svg>
+    </button>
+  </div>
 </section>
 
     </main>
