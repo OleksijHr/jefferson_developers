@@ -1,87 +1,117 @@
-<!-- <p>
-  У секції немає видимого заголовку. Потрібно зробити прихований заголовок для
-  краулерів. Секція також містить описову частину та зображення, яке слід
-  реалізувати як контенте. Інформацію про себе, свій досвід і освіту необхідно
-  реалізувати за допомогою ul і бібліотеки Accordeon як список елементів, що
-  розкриватимуться або закриватимуться по clickу на елемент в залежності від
-  його стану. По замовчуванню, перший елемент списку має бути розкритим. Перелік
-  навичок необхідно реалізувати за допомогою ul у вигляді горизонтального
-  слайдера (https://swiperjs.com/swiper-api). Користувач повинен мати змогу
-  взаємодіяти зі слайдером через мишу, клавіатуру (клавіш Tab та стрілок) або
-  сенсорний екран. По clickу праворуч (або відповідно до зазначеного напрямку),
-  у разі досягнення кінця списку елементів, наступний click повинен знову
-  відобразити перший/останній елемент. Така функціональність дозволить
-  користувачеві продовжувати переглядати елементи безкінечно, переходячи з
-  одного кінця до іншого без переривання.
-</p> -->
 <section class="aboutme-section" id="aboutme">
-  <h2>About me</h2>
   <div class="container">
-    <p>
-      I work with people all over the world to create impressive and
-      <span>functional</span><span>websites</span>that reflect each client's
-      unique personality.
-    </p>
-    <!-- <img src="" alt="" /> -->
-  </div>
-  <div class="container">
-    <h3>About me</h3>
-    <div class="container">
-      <p>
-        I am Lloyd Jefferson, a talented programmer with extensive expertise in
-        software development. I have an understanding of different programming
-        languages ​​and technologies, always ready to improve my skills. I
-        always follow the latest trends and look for unconventional, creative
-        solutions to problems. I have a high level of analytical skills and am
-        able to effectively solve even the most difficult tasks encountered on
-        the way.
-      </p>
-      <p>
-        Able to work both independently and in a team. I can effectively
-        cooperate with colleagues, exchanging ideas and finding optimal
-        solutions. Professional maturity allows you to calmly cope with
-        challenges and stressful situations, while maintaining a high quality of
-        work.I am always looking for opportunities for self-improvement. I
-        actively study new technologies and practices to stay abreast of the
-        latest innovations. I have a strong understanding of various programming
-        languages, frameworks and architectural concepts that allow me to create
-        efficient and scalable software.
-      </p>
-      <!-- svg-arrow -->
+    <h2 class="visually-hidden">About me</h2>
+    <div class="about-me-work-and-photo">
+      <div class="about-me-work">
+        <p class="about-me-work-text">
+          I work with people all over the world to create impressive and
+          <span class="about-me-work-text-red">functional</span>
+          <span class="about-me-work-text-grey">websites</span> that reflect
+          each client's unique personality.
+        </p>
+      </div>
+      <div class="about-me-photo">
+        <!-- <picture>
+          <img
+            src="/src/img/about-me/"
+            alt="client"
+            width="680"
+            height="700"
+            class="about-me-img"
+          />
+        </picture> -->
+      </div>
     </div>
-  </div>
-  <div class="container">
-    <h3>Role</h3>
-    <ul>
-      <li>Frontend development</li>
-      <li>HeadlessCMS,Wordpress</li>
-      <li>Blender(enjoy)</li>
-    </ul>
-    <!-- svg-arrow -->
-  </div>
-  <div class="container">
-    <h3>Education</h3>
-    <ul>
-      <li>
-        2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
-      </li>
-      <li>
-        2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New
-        York
-      </li>
-      <li>2020 - 2022 / Advanced Blender Animation Techniques, Udemy</li>
-    </ul>
-    <!-- svg-arrow -->
-  </div>
-  <div class="container">
-    <ul>
-      <li>HTML/CSS</li>
-      <li>JavaScript</li>
-      <li>React</li>
-      <li>Node.js</li>
-      <li>React Native</li>
-      <li>Soft skills</li>
-      <!-- <li>svg-arrow</li> -->
-    </ul>
+
+    <div class="about-me-about">
+      <ul class="about-me-about-list">
+        <li class="about-me-about-list-item">
+          <div class="about-me-about-header-n-btn">
+            <h3 class="about-me-about-header">ABOUT ME</h3>
+          </div>
+          <div class="about-me-about-panel">
+            <div class="about-me-about-text-box">
+              <div class="about-me-about-text">
+                I am Lloyd Jefferson, a talented programmer with extensive
+                expertise in software development. I have an understanding of
+                different programming languages and technologies, always ready
+                to improve my skills. I always follow the latest trends and look
+                for unconventional, creative solutions to problems. I have a
+                high level of analytical skills and am able to effectively solve
+                even the most difficult tasks encountered on the way.
+              </div>
+
+              <div>
+                Able to work both independently and in a team. I can effectively
+                cooperate with colleagues, exchanging ideas and finding optimal
+                solutions. Professional maturity allows you to calmly cope with
+                challenges and stressful situations, while maintaining a high
+                quality of work.I am always looking for opportunities for
+                self-improvement. I actively study new technologies and
+                practices to stay abreast of the latest innovations. I have a
+                strong understanding of various programming languages,
+                frameworks and architectural concepts that allow me to create
+                efficient and scalable software.
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="about-me-about-list-item">
+          <div class="about-me-header-n-btn">
+            <h3 class="about-me-about-header">ROLE</h3>
+          </div>
+          <div class="about-me-about-panel">
+            <div class="about-me-about-text">
+              <div class="about-me-about-role">Frontend development</div>
+              <div class="about-me-about-role">HeadlessCMS,Wordpress</div>
+              <div class="about-me-about-role">Blender(enjoy)</div>
+            </div>
+          </div>
+        </li>
+        <li class="about-me-about-list-item">
+          <div class="about-me-header-n-btn">
+            <h3 class="about-me-about-header">EDUCATION</h3>
+          </div>
+          <div class="about-me-about-panel">
+            <div class="about-me-about-text">
+              <div class="about-me-about-education">
+                2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
+                York
+              </div>
+              <div class="about-me-about-education">
+                2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+                School, New York
+              </div>
+
+              <div class="about-me-about-education">
+                2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="about-me-skills">
+      <div class="about-me-swiper-container">
+        <ul class="about-me-skillslist">
+          <li class="about-me-skillslist-item about-me-skillslist-text">
+            HTML/CSS
+          </li>
+          <li class="about-me-skillslist-item about-me-skillslist-text">
+            JavaScript
+          </li>
+          <li class="about-me-skillslist-item about-me-skillslist-text">
+            React
+          </li>
+          <li class="about-me-skillslist-item about-me-skillslist-text">
+            Node. js
+          </li>
+          <li class="about-me-skillslist-item about-me-skillslist-text">
+            React Native
+          </li>
+          <li class="about-me-skillslist-item about-me-skillslist-text">
+            Soft skills
+          </li>
+        </ul>
   </div>
 </section>
