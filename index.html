@@ -21,7 +21,7 @@
     />
     
     <script type="module" crossorigin src="/jefferson_developers/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/jefferson_developers/assets/index-3c5d312f.css">
+    <link rel="stylesheet" href="/jefferson_developers/assets/index-e2267580.css">
   </head>
   <body>
     <!-- Header -->
@@ -61,11 +61,38 @@
       </ul>
       <a class="nav-btn" href="#work-together">Order the project</a>
     </nav>
-    <button class="burger-button" type="button">
+    <button class="burger-button" type="button" data-menu-open>
       <svg class="burger-icon" width="28" height="28">
         <use href="../img/icons.svg#icon-icon"></use>
       </svg>
     </button>
+  </div>
+  <!-- MOB MENU -->
+  <div class="mob-menu is-hidden is-open" data-menu>
+    <div class="container">
+      <button class="mob-menu-close-btn" data-menu-close type="button">
+        <svg></svg>
+      </button>
+      <ul class="mob-menu-list">
+        <li class="mob-menu-item">
+          <a class="mob-menu-item-link" href="#aboutme">About me</a>
+        </li>
+        <li class="mob-menu-item">
+          <a class="mob-menu-item-link" href="#benefits">Benefits</a>
+        </li>
+        <li class="mob-menu-item">
+          <a class="mob-menu-item-link" href="#projects">Projects</a>
+        </li>
+        <li class="mob-menu-item">
+          <a class="mob-menu-item-link" href="#faq">FAQ</a>
+        </li>
+      </ul>
+      <div class="mob-menu-btn-position">
+        <a class="mob-menu-order-btn" href="#work-together"
+          >Order the project</a
+        >
+      </div>
+    </div>
   </div>
 </header>
 
