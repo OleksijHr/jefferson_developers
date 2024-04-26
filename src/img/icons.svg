@@ -37,5 +37,9 @@
 <symbol id="icon-YT" viewBox="0 0 56 32">
 <path d="M1.44 0.96h5.307l8.125 14.123h0.333l8.085-14.123h5.355l-11.269 18.853v12.187h-4.688v-12.187l-11.251-18.853zM29.52 4.979v-4.019h24.043v4.021h-9.667v27.019h-4.667v-27.021h-9.707z"></path>
 </symbol>
+<symbol id="icon-icon" viewBox="0 0 64 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="5.3333" d="M4 5.111h56M4 26.889h56"></path>
+</symbol>
+
 </defs>
 </svg>

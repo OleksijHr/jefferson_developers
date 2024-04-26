@@ -1,21 +1,42 @@
 <header class="header">
-  <nav class="nav">
-    <a href=""><img src="" alt="" /></a>
-    <ul class="nav-list">
-      <a href="">Menu</a>
-      <li class="nav-item">
-        <a href="#aboutme" class="nav-link">About me</a>
-      </li>
-      <li class="nav-item">
-        <a href="#benefits" class="nav-link">Benefits</a>
-      </li>
-      <li class="nav-item">
-        <a href="#projects" class="nav-link">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a href="#faq" class="nav-link">FAQ</a>
-      </li>
-    </ul>
-    <a class="nav-btn" href="#work-together">Order the project</a>
-  </nav>
+  <div class="container">
+    <nav class="header-navigation">
+      <div class="nav-logo">
+        <a class="nav-logo-link" href=""
+          ><img
+            class="nav-img"
+            src="../img/projects/header-1x.jpg"
+            srcset="
+              ../img/projects/header-1x.jpg 1x,
+              ../img/projects/header-2x.jpg 2x
+            "
+            alt="jefferson"
+            width="80"
+            height="80"
+        /></a>
+        <p class="nav-text">jefferson*</p>
+      </div>
+      <ul class="nav-list">
+        <a class="nav-list-menu" href="">Menu</a>
+        <!-- <li class="nav-item">
+          <a href="./page-2.html" class="nav-link">About me</a>
+        </li>
+        <li class="nav-item">
+          <a href="/" class="nav-link">Benefits</a>
+        </li>
+        <li class="nav-item">
+          <a href="/" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="/" class="nav-link">FAQ</a>
+        </li> -->
+      </ul>
+      <a class="nav-btn" href="#work-together">Order the project</a>
+    </nav>
+    <button class="burger-button" type="button">
+      <svg class="burger-icon" width="28" height="28">
+        <use href="../img/icons.svg#icon-icon"></use>
+      </svg>
+    </button>
+  </div>
 </header>
