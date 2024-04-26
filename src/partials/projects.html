@@ -1,12 +1,116 @@
-<p>
-  Текст “Projects” є заголовком секції. Перелік проєктів та опису до них
-  необхідно реалізувати за допомогою ul у вигляді горизонтального слайдера
-  (https://swiperjs.com/swiper-api). Користувач повинен мати змогу взаємодіяти
-  зі слайдером через мишу, клавіатуру (клавіш Tab та стрілок) або сенсорний
-  екран. У разі досягнення кінця списку елементів, кнопка відповідно до
-  вказаного напрямку повинна бути задізейблена (користувач більше не може
-  взаємодіяти з нею, і вона не реагує на події clickу або натискання клавіші).
-  Задізейблена кнопка візуальною змінюється, що підкреслює її неактивний стан.
-  Зображення потрібно реалізувати як контенті. Посилання "See project" має
-  відкривати проєкт команди, розміщений на GitHub, у новій вкладці.
-</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <!-- Підключення CSS-стилів для Swiper -->
+
+    <!-- Підключення ваших власних CSS-стилів -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="projects-section">
+      <h2 class="projects-title">PROJECTS</h2>
+
+      <div class="swiper-container">
+        <ul class="swiper-gallery">
+          <li class="swiping-page">
+            <div class="swiper-slide">
+              <div class="develop-content-icons">
+                <div class="develop-content-icons-item">#react</div>
+                <div class="develop-content-icons-item">#js</div>
+                <div class="develop-content-icons-item">#node js</div>
+                <div class="develop-content-icons-item">#git</div>
+              </div>
+
+              <h3 class="project-number">Project 1</h3>
+              <p class="cross-border-programming">
+                Programming Across Borders: Ideas, Technologies, Innovations
+              </p>
+
+              <button
+                onclick="window.open('//github.com/OleksijHr/jefferson_developers', '_blank')"
+                class="see-project-button"
+              >
+                See project
+              </button>
+              <div class="project-picture-container">
+                <img
+                  class="project-picture"
+                  src="../img/projects/readjourney_mob@1.jpg"
+                  alt="Project 1"
+                />
+              </div>
+            </div>
+            <div class="swiper-buttons-container">
+              <button class="swiper-button-prev">Prev</button>
+              <button class="swiper-button-next">Next</button>
+            </div>
+          </li>
+          <li>
+            <div class="content">
+              <div class="content-#react">#react</div>
+              <div class="content-#js">#js</div>
+              <div class="content-#node js">#node js</div>
+              <div class="content-#git">#git</div>
+            </div>
+            <div class="swiper-slide">
+              <h3>Project 2</h3>
+              <p>
+                Programming Across Borders: Ideas, Technologies, Innovations
+              </p>
+
+              <button
+                class="my-button"
+                onclick="window.location.href = '//www.example.com';"
+              >
+                See project
+              </button>
+
+              <img src="../img/projects/petlove_mob@1.jpg" alt="Project 2" />
+            </div>
+          </li>
+          <li>
+            <div class="content">
+              <div class="content-#react">#react</div>
+              <div class="content-#js">#js</div>
+              <div class="content-#node js">#node js</div>
+              <div class="content-#git">#git</div>
+            </div>
+            <div class="swiper-slide">
+              <h3>Project 3</h3>
+              <p>
+                Programming Across Borders: Ideas, Technologies, Innovations
+              </p>
+
+              <button
+                class="my-button"
+                onclick="window.location.href = '//www.example.com';"
+              >
+                See project
+              </button>
+
+              <img
+                src="../img/projects/vocabbuilder_mob@1.jpg"
+                alt="Project 3"
+              />
+              <div class="navigation-buttons-container">
+                <button class="swiper-button-prev">Prev</button>
+                <button class="swiper-button-next">Next</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- Add pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- Add navigation buttons -->
+      <div class="navigation-buttons-container">
+        <button class="swiper-button-prev">Prev</button>
+        <button class="swiper-button-next">Next</button>
+      </div>
+    </section>
+  </body>
+</html>
