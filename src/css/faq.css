@@ -1,61 +1,3 @@
-/* .faq-section {
-
-}
-.faq-title {
-font-weight: 600;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: -0.02em;
-color: rgba(250, 250, 250, 0.4);
-padding-bottom: 52px;
-}
-
-.faq-block {
-display: flex;
-align-items: flex-start;
-justify-content: flex-start;
-flex-direction: column;
-gap: 16px;
-}
-
-.faq-question {
-font-weight: 600;
-font-size: 20px;
-line-height: 1.5;
-letter-spacing: -0.02em;
-flex: 1;
-}
-
-.faq-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.faq-btn {
-border: 1px solid rgba(250, 250, 250, 0.2);
-border-radius: 100px;
-padding: 7px;
-width: 34px;
-height: 34px;
-background-color: var(--primary-bg-clr);
-
-}
-
-.faq-arrow>svg {
-color: blue;
-}
-
-.faq-answer {
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: -0.02em;
-color: rgba(250, 250, 250, 0.6);
-display: none;
-} */
-
-
 .faq-section {
     display: flex;
     flex-direction: column;
@@ -70,15 +12,15 @@ letter-spacing: -0.02em;
 color: rgba(250, 250, 250, 0.4);
 padding-bottom: 52px;
 
+}
 
-}
-.faq-block {
-}
 
 .faq-list-item{
     padding-bottom: 20px;
-    /* border-top: 1px rgba(250, 250, 250, 0.4);
-    border-bottom: 1px rgba(250, 250, 250, 0.4); */
+}
+
+.faq-vector {
+    color: var(--primary-txt-clr);
 }
 
 .faq-content {
@@ -92,7 +34,7 @@ font-weight: 500;
 font-size: 20px;
 line-height: 1.5;
 letter-spacing: -0.02em;
-padding-right: 44px;
+gap: 20px;
 padding-bottom: 16px;
 }
 .faq-btn {
@@ -100,14 +42,14 @@ position: relative;
 bottom: 10px;
 cursor: pointer;
 border: 1px solid rgba(250, 250, 250, 0.2);
-border-radius: 100px;
+border-radius: 50%;
 padding: 7px;
 width: 34px;
 height: 34px;
 background-color: var(--primary-bg-clr);
 }
 .faq-arrow {
-
+  color: var(--primary-txt-clr);
 }
 .faq-answer {
 font-weight: 500;
@@ -115,5 +57,18 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: -0.02em;
 color: rgba(250, 250, 250, 0.6);
+/* display: none; */
+}
 
+@media only screen and (min-width: 1200px) {
+    .faq-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px 20px;
+    }
+
+    .faq-list-item{
+        max-width: 100%;
+        flex-basis: calc((100% - 24px) / 2);
+    }
 }
