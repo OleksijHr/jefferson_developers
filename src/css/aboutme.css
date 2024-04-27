@@ -12,6 +12,10 @@
   overflow: hidden;
 }
 
+.apostrophe {
+  content: '\0027';
+}
+
 .about-me-work-and-photo {
   width: 100%;
   display: flex;
