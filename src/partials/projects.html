@@ -1,12 +1,698 @@
-<p>
-  Текст “Projects” є заголовком секції. Перелік проєктів та опису до них
-  необхідно реалізувати за допомогою ul у вигляді горизонтального слайдера
-  (https://swiperjs.com/swiper-api). Користувач повинен мати змогу взаємодіяти
-  зі слайдером через мишу, клавіатуру (клавіш Tab та стрілок) або сенсорний
-  екран. У разі досягнення кінця списку елементів, кнопка відповідно до
-  вказаного напрямку повинна бути задізейблена (користувач більше не може
-  взаємодіяти з нею, і вона не реагує на події clickу або натискання клавіші).
-  Задізейблена кнопка візуальною змінюється, що підкреслює її неактивний стан.
-  Зображення потрібно реалізувати як контенті. Посилання "See project" має
-  відкривати проєкт команди, розміщений на GitHub, у новій вкладці.
-</p>
+<section class="container">
+  <h2 class="projects-title">PROJECTS</h2>
+  <div class="swiper-container">
+    <ul class="swiper-gallery">
+      <li class="swiping-page">
+        <div class="swiper-slide">
+          <ul class="develop-content-icons">
+            <li class="develop-content-icons-item">#react</li>
+            <li class="develop-content-icons-item">#js</li>
+            <li class="develop-content-icons-item">#node js</li>
+            <li class="develop-content-icons-item">#git</li>
+          </ul>
+
+          <h3 class="project-number">Project 1</h3>
+          <p class="cross-border-programming">
+            Programming Across Borders: Ideas, Technologies, Innovations
+          </p>
+
+          <button
+            onclick="window.open('//github.com/OleksijHr/jefferson_developers', '_blank')"
+            class="see-project-button"
+          >
+            See project
+          </button>
+          <div class="project-picture-container">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="../img/projects/readjourney_mob@2.jpg" />
+
+              <source
+                media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="../img/projects/readjourney_tab@1.jpg" />
+              <source
+                media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="../img/projects/readjourney_tab@2.jpg" />
+
+              <source
+                media="(min-width: 1024px) and (max-width: 1439px)"
+                srcset="../img/projects/readjourney_desk@1.jpg" />
+
+              <source
+                media="(min-width: 1024px) and (max-width: 1439px)"
+                srcset="../img/projects/readjourney_desk@2.jpg." />
+
+              <img
+                class="project-picture"
+                src="../img/projects/readjourney_mob@1.jpg"
+                alt="Text and picture of mobile phone"
+            /></picture>
+          </div>
+        </div>
+        <div class="swiper-buttons-container">
+          <button class="swiper-button-prev">Prev</button>
+          <button class="swiper-button-next">Next</button>
+        </div>
+      </li>
+      <li class="swiping-page">
+        <div class="swiper-slide">
+          <ul class="develop-content-icons">
+            <li class="develop-content-icons-item">#react</li>
+            <li class="develop-content-icons-item">#js</li>
+            <li class="develop-content-icons-item">#node js</li>
+            <li class="develop-content-icons-item">#git</li>
+          </ul>
+
+          <h3 class="project-number">Project 2</h3>
+          <p class="cross-border-programming">
+            Programming Across Borders: Ideas, Technologies, Innovations
+          </p>
+
+          <button
+            onclick="window.open('//github.com/OleksijHr/jefferson_developers', '_blank')"
+            class="see-project-button"
+          >
+            See project
+          </button>
+          <div class="project-picture-container">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="../img/projects/petlove_mob@2.jpg" />
+
+              <source
+                media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="../img/projects/petlove_tab@1.jpg" />
+              <source
+                media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="../img/projects/petlove_tab@2.jpg" />
+
+              <source
+                media="(min-width: 1024px) and (max-width: 1439px)"
+                srcset="../img/projects/petlove_desk@1.jpg" />
+
+              <source
+                media="(min-width: 1024px) and (max-width: 1439px)"
+                srcset="../img/projects/petlove_desk@2.jpg." />
+
+              <img
+                class="project-picture"
+                src="../img/projects/petlove_mob@1.jpg"
+                alt="Doctor is checking dog's ear"
+            /></picture>
+          </div>
+        </div>
+        <div class="swiper-buttons-container">
+          <button class="swiper-button-prev">Prev</button>
+          <button class="swiper-button-next">Next</button>
+        </div>
+      </li>
+      <li class="swiping-page">
+        <div class="swiper-slide">
+          <ul class="develop-content-icons">
+            <li class="develop-content-icons-item">#react</li>
+            <li class="develop-content-icons-item">#js</li>
+            <li class="develop-content-icons-item">#node js</li>
+            <li class="develop-content-icons-item">#git</li>
+          </ul>
+
+          <h3 class="project-number">Project 3</h3>
+          <p class="cross-border-programming">
+            Programming Across Borders: Ideas, Technologies, Innovations
+          </p>
+
+          <button
+            onclick="window.open('//github.com/OleksijHr/jefferson_developers', '_blank')"
+            class="see-project-button"
+          >
+            See project
+          </button>
+          <div class="project-picture-container">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="../img/projects/vocabbuilder_mob@2.jpg" />
+
+              <source
+                media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="../img/projects/vocabbuilder_tab@1.jpg" />
+              <source
+                media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="../img/projects/vocabbuilder_tab@2.jpg" />
+
+              <source
+                media="(min-width: 1024px) and (max-width: 1439px)"
+                srcset="../img/projects/vocabbuilder_desk@1.jpg" />
+
+              <source
+                media="(min-width: 1024px) and (max-width: 1439px)"
+                srcset="../img/projects/vocabbuilder_desk@2.jpg." />
+
+              <img
+                class="project-picture"
+                src="../img/projects/petlove_mob@1.jpg"
+                alt="Teenagers are reading"
+            /></picture>
+          </div>
+        </div>
+        <div class="swiper-buttons-container">
+          <button class="swiper-button-prev">Prev</button>
+          <button class="swiper-button-next">Next</button>
+        </div>
+      </li>
+      <li class="swiping-page">
+        <div class="swiper-slide">
+          <ul class="develop-content-icons">
+            <li class="develop-content-icons-item">#react</li>
+            <li class="develop-content-icons-item">#js</li>
+            <li class="develop-content-icons-item">#node js</li>
+            <li class="develop-content-icons-item">#git</li>
+          </ul>
+
+          <h3 class="project-number">Project 4</h3>
+          <p class="cross-border-programming">
+            Programming Across Borders: Ideas, Technologies, Innovations
+          </p>
+
+          <button
+            onclick="window.open('//github.com/OleksijHr/jefferson_developers', '_blank')"
+            class="see-project-button"
+          >
+            See project
+          </button>
+          <div class="project-picture-container">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="../img/projects/power_pulse_mob@2.jpg" />
+
+              <source
+                media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="../img/projects/power_pulse_tab@1.jpg" />
+              <source
+                media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="../img/projects/power_pulse_tab@2.jpg" />
+
+              <source
+                media="(min-width: 1024px) and (max-width: 1439px)"
+                srcset="../img/projects/power_pulse_desk@1.jpg" />
+
+              <source
+                media="(min-width: 1024px) and (max-width: 1439px)"
+                srcset="../img/projects/power_pulse_desk@2.jpg." />
+
+              <img
+                class="project-picture"
+                src="../img/projects/power_pulse_mob@1.jpg"
+                alt="Lady are getting workout"
+            /></picture>
+          </div>
+        </div>
+        <div class="swiper-buttons-container">
+          <button class="swiper-button-prev">Prev</button>
+          <button class="swiper-button-next">Next</button>
+        </div>
+      </li>
+      <li class="swiping-page">
+        <div class="swiper-slide">
+          <ul class="develop-content-icons">
+            <li class="develop-content-icons-item">#react</li>
+            <li class="develop-content-icons-item">#js</li>
+            <li class="develop-content-icons-item">#node js</li>
+            <li class="develop-content-icons-item">#git</li>
+          </ul>
+
+          <h3 class="project-number">Project 5</h3>
+          <p class="cross-border-programming">
+            Programming Across Borders: Ideas, Technologies, Innovations
+          </p>
+
+          <button
+            onclick="window.open('//github.com/OleksijHr/jefferson_developers', '_blank')"
+            class="see-project-button"
+          >
+            See project
+          </button>
+          <div class="project-picture-container">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="../img/projects/mimino_mob@2.jpg" />
+
+              <source
+                media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="../img/projects/mimino_tab@1.jpg" />
+              <source
+                media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="../img/projects/mimino_tab@2.jpg" />
+
+              <source
+                media="(min-width: 1024px) and (max-width: 1439px)"
+                srcset="../img/projects/mimino_desk@1.jpg" />
+
+              <source
+                media="(min-width: 1024px) and (max-width: 1439px)"
+                srcset="../img/projects/mimino_desk@2.jpg." />
+
+              <img
+                class="project-picture"
+                src="../img/projects/mimino_mob@1.jpg"
+                alt="Modern front wall"
+            /></picture>
+          </div>
+        </div>
+        <div class="swiper-buttons-container">
+          <button class="swiper-button-prev">Prev</button>
+          <button class="swiper-button-next">Next</button>
+        </div>
+      </li>
+      <li class="swiping-page">
+        <div class="swiper-slide">
+          <ul class="develop-content-icons">
+            <li class="develop-content-icons-item">#react</li>
+            <li class="develop-content-icons-item">#js</li>
+            <li class="develop-content-icons-item">#node js</li>
+            <li class="develop-content-icons-item">#git</li>
+          </ul>
+
+          <h3 class="project-number">Project 6</h3>
+          <p class="cross-border-programming">
+            Programming Across Borders: Ideas, Technologies, Innovations
+          </p>
+
+          <button
+            onclick="window.open('//github.com/OleksijHr/jefferson_developers', '_blank')"
+            class="see-project-button"
+          >
+            See project
+          </button>
+          <div class="project-picture-container">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="../img/projects/ukranian_traditions_mob@2.jpg" />
+
+              <source
+                media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="../img/projects/ukranian_traditions_tab@1.jpg" />
+              <source
+                media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="../img/projects/ukranian_traditions_tab@2.jpg" />
+
+              <source
+                media="(min-width: 1024px) and (max-width: 1439px)"
+                srcset="../img/projects/ukranian_traditions_desk@1.jpg" />
+
+              <source
+                media="(min-width: 1024px) and (max-width: 1439px)"
+                srcset="../img/projects/ukranian_traditions_desk@2.jpg." />
+
+              <img
+                class="project-picture"
+                src="../img/projects/ukranian_traditions_mob@1.jpg"
+                alt="Lady in ukranian folk wear"
+            /></picture>
+          </div>
+        </div>
+        <div class="swiper-buttons-container">
+          <button class="swiper-button-prev">Prev</button>
+          <button class="swiper-button-next">Next</button>
+        </div>
+      </li>
+      <li class="swiping-page">
+        <div class="swiper-slide">
+          <ul class="develop-content-icons">
+            <li class="develop-content-icons-item">#react</li>
+            <li class="develop-content-icons-item">#js</li>
+            <li class="develop-content-icons-item">#node js</li>
+            <li class="develop-content-icons-item">#git</li>
+          </ul>
+
+          <h3 class="project-number">Project 7</h3>
+          <p class="cross-border-programming">
+            Programming Across Borders: Ideas, Technologies, Innovations
+          </p>
+
+          <button
+            onclick="window.open('//github.com/OleksijHr/jefferson_developers', '_blank')"
+            class="see-project-button"
+          >
+            See project
+          </button>
+          <div class="project-picture-container">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="../img/projects/green_harvest_mob@2.jpg" />
+
+              <source
+                media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="../img/projects/green_harvest_tab@1.jpg" />
+              <source
+                media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="../img/projects/green_harvest_tab@2.jpg" />
+
+              <source
+                media="(min-width: 1024px) and (max-width: 1439px)"
+                srcset="../img/projects/green_harvest_desk@1.jpg" />
+
+              <source
+                media="(min-width: 1024px) and (max-width: 1439px)"
+                srcset="../img/projects/green_harvest_desk@2.jpg." />
+
+              <img
+                class="project-picture"
+                src="../img/projects/green_harvest_mob@1.jpg"
+                alt="A basket of vegetables"
+            /></picture>
+          </div>
+        </div>
+        <div class="swiper-buttons-container">
+          <button class="swiper-button-prev">Prev</button>
+          <button class="swiper-button-next">Next</button>
+        </div>
+      </li>
+      <li class="swiping-page">
+        <div class="swiper-slide">
+          <ul class="develop-content-icons">
+            <li class="develop-content-icons-item">#react</li>
+            <li class="develop-content-icons-item">#js</li>
+            <li class="develop-content-icons-item">#node js</li>
+            <li class="develop-content-icons-item">#git</li>
+          </ul>
+
+          <h3 class="project-number">Project 8</h3>
+          <p class="cross-border-programming">
+            Programming Across Borders: Ideas, Technologies, Innovations
+          </p>
+
+          <button
+            onclick="window.open('//github.com/OleksijHr/jefferson_developers', '_blank')"
+            class="see-project-button"
+          >
+            See project
+          </button>
+          <div class="project-picture-container">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="../img/projects/wallet_mob@2.jpg" />
+
+              <source
+                media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="../img/projects/wallet_tab@1.jpg" />
+              <source
+                media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="../img/projects/wallet_tab@2.jpg" />
+
+              <source
+                media="(min-width: 1024px) and (max-width: 1439px)"
+                srcset="../img/projects/wallet_desk@1.jpg" />
+
+              <source
+                media="(min-width: 1024px) and (max-width: 1439px)"
+                srcset="../img/projects/wallet_desk@2.jpg." />
+
+              <img
+                class="project-picture"
+                src="../img/projects/wallet_mob@1.jpg"
+                alt="People are laughing"
+            /></picture>
+          </div>
+        </div>
+        <div class="swiper-buttons-container">
+          <button class="swiper-button-prev">Prev</button>
+          <button class="swiper-button-next">Next</button>
+        </div>
+      </li>
+      <li class="swiping-page">
+        <div class="swiper-slide">
+          <ul class="develop-content-icons">
+            <li class="develop-content-icons-item">#react</li>
+            <li class="develop-content-icons-item">#js</li>
+            <li class="develop-content-icons-item">#node js</li>
+            <li class="develop-content-icons-item">#git</li>
+          </ul>
+
+          <h3 class="project-number">Project 9</h3>
+          <p class="cross-border-programming">
+            Programming Across Borders: Ideas, Technologies, Innovations
+          </p>
+
+          <button
+            onclick="window.open('//github.com/OleksijHr/jefferson_developers', '_blank')"
+            class="see-project-button"
+          >
+            See project
+          </button>
+          <div class="project-picture-container">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="../img/projects/chego_mob@2.jpg" />
+
+              <source
+                media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="../img/projects/chego_tab@1.jpg" />
+              <source
+                media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="../img/projects/chego_tab@2.jpg" />
+
+              <source
+                media="(min-width: 1024px) and (max-width: 1439px)"
+                srcset="../img/projects/chego_desk@1.jpg" />
+
+              <source
+                media="(min-width: 1024px) and (max-width: 1439px)"
+                srcset="../img/projects/chego_desk@2.jpg." />
+
+              <img
+                class="project-picture"
+                src="../img/projects/chego_mob@1.jpg"
+                alt="Young Lady with bright makeup"
+            /></picture>
+          </div>
+        </div>
+        <div class="swiper-buttons-container">
+          <button class="swiper-button-prev">Prev</button>
+          <button class="swiper-button-next">Next</button>
+        </div>
+      </li>
+      <li class="swiping-page">
+        <div class="swiper-slide">
+          <ul class="develop-content-icons">
+            <li class="develop-content-icons-item">#react</li>
+            <li class="develop-content-icons-item">#js</li>
+            <li class="develop-content-icons-item">#node js</li>
+            <li class="develop-content-icons-item">#git</li>
+          </ul>
+
+          <h3 class="project-number">Project 10</h3>
+          <p class="cross-border-programming">
+            Programming Across Borders: Ideas, Technologies, Innovations
+          </p>
+
+          <button
+            onclick="window.open('//github.com/OleksijHr/jefferson_developers', '_blank')"
+            class="see-project-button"
+          >
+            See project
+          </button>
+          <div class="project-picture-container">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="../img/projects/energy_flow_mob@2.jpg" />
+
+              <source
+                media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="../img/projects/energy_flow_tab@1.jpg" />
+              <source
+                media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="../img/projects/energy_flow_tab@2.jpg" />
+
+              <source
+                media="(min-width: 1024px) and (max-width: 1439px)"
+                srcset="../img/projects/energy_flow_desk@1.jpg" />
+
+              <source
+                media="(min-width: 1024px) and (max-width: 1439px)"
+                srcset="../img/projects/energy_flow_desk@2.jpg." />
+
+              <img
+                class="project-picture"
+                src="../img/projects/energy_flow_mob@1.jpg"
+                alt="Lady training by dumbells"
+            /></picture>
+          </div>
+        </div>
+        <div class="swiper-buttons-container">
+          <button class="swiper-button-prev">Prev</button>
+          <button class="swiper-button-next">Next</button>
+        </div>
+      </li>
+      <li class="swiping-page">
+        <div class="swiper-slide">
+          <ul class="develop-content-icons">
+            <li class="develop-content-icons-item">#react</li>
+            <li class="develop-content-icons-item">#js</li>
+            <li class="develop-content-icons-item">#node js</li>
+            <li class="develop-content-icons-item">#git</li>
+          </ul>
+
+          <h3 class="project-number">Project 11</h3>
+          <p class="cross-border-programming">
+            Programming Across Borders: Ideas, Technologies, Innovations
+          </p>
+
+          <button
+            onclick="window.open('//github.com/OleksijHr/jefferson_developers', '_blank')"
+            class="see-project-button"
+          >
+            See project
+          </button>
+          <div class="project-picture-container">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="../img/projects/fruitbox_mob@2.jpg" />
+
+              <source
+                media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="../img/projects/fruitbox_tab@1.jpg" />
+              <source
+                media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="../img/projects/fruitbox_tab@2.jpg" />
+
+              <source
+                media="(min-width: 1024px) and (max-width: 1439px)"
+                srcset="../img/projects/fruitbox_desk@1.jpg" />
+
+              <source
+                media="(min-width: 1024px) and (max-width: 1439px)"
+                srcset="../img/projects/fruitbox_desk@2.jpg." />
+
+              <img
+                class="project-picture"
+                src="../img/projects/fruitbox_mob@1.jpg"
+                alt="Cutted oranges and limes"
+            /></picture>
+          </div>
+        </div>
+        <div class="swiper-buttons-container">
+          <button class="swiper-button-prev">Prev</button>
+          <button class="swiper-button-next">Next</button>
+        </div>
+      </li>
+      <li class="swiping-page">
+        <div class="swiper-slide">
+          <ul class="develop-content-icons">
+            <li class="develop-content-icons-item">#react</li>
+            <li class="develop-content-icons-item">#js</li>
+            <li class="develop-content-icons-item">#node js</li>
+            <li class="develop-content-icons-item">#git</li>
+          </ul>
+
+          <h3 class="project-number">Project 12</h3>
+          <p class="cross-border-programming">
+            Programming Across Borders: Ideas, Technologies, Innovations
+          </p>
+
+          <button
+            onclick="window.open('//github.com/OleksijHr/jefferson_developers', '_blank')"
+            class="see-project-button"
+          >
+            See project
+          </button>
+          <div class="project-picture-container">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="../img/projects/englishexellence_mob@2.jpg" />
+
+              <source
+                media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="../img/projects/englishexellence_tab@1.jpg" />
+              <source
+                media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="../img/projects/englishexellence_tab@2.jpg" />
+
+              <source
+                media="(min-width: 1024px) and (max-width: 1439px)"
+                srcset="../img/projects/englishexellence_desk@1.jpg" />
+
+              <source
+                media="(min-width: 1024px) and (max-width: 1439px)"
+                srcset="../img/projects/fruitbox_desk@2.jpg." />
+
+              <img
+                class="project-picture"
+                src="../img/projects/englishexellence_mob@1.jpg"
+                alt="Girl in earphones are smiling"
+            /></picture>
+          </div>
+        </div>
+        <div class="swiper-buttons-container">
+          <button class="swiper-button-prev">Prev</button>
+          <button class="swiper-button-next">Next</button>
+        </div>
+      </li>
+      <li class="swiping-page">
+        <div class="swiper-slide">
+          <ul class="develop-content-icons">
+            <li class="develop-content-icons-item">#react</li>
+            <li class="develop-content-icons-item">#js</li>
+            <li class="develop-content-icons-item">#node js</li>
+            <li class="develop-content-icons-item">#git</li>
+          </ul>
+
+          <h3 class="project-number">Project 13</h3>
+          <p class="cross-border-programming">
+            Programming Across Borders: Ideas, Technologies, Innovations
+          </p>
+
+          <button
+            onclick="window.open('//github.com/OleksijHr/jefferson_developers', '_blank')"
+            class="see-project-button"
+          >
+            See project
+          </button>
+          <div class="project-picture-container">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="../img/projects/starlight_studio_mob@2.jpg" />
+
+              <source
+                media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="../img/projects/starlight_studio_tab@1.jpg" />
+              <source
+                media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="../img/projects/starlight_studio_tab2.jpg" />
+
+              <source
+                media="(min-width: 1024px) and (max-width: 1439px)"
+                srcset="../img/projects/starlight_studio_desk@1.jpg" />
+
+              <source
+                media="(min-width: 1024px) and (max-width: 1439px)"
+                srcset="../img/projects/starlight_studio_desk@2.jpg." />
+
+              <img
+                class="project-picture"
+                src="../img/projects/starlight_studio_mob@1.jpg"
+                alt="StarlightStudio's banner"
+            /></picture>
+          </div>
+        </div>
+        <div class="swiper-buttons-container">
+          <button class="swiper-button-prev">Prev</button>
+          <button class="swiper-button-next">Next</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <!-- Add pagination -->
+  <div class="swiper-pagination"></div>
+</section>

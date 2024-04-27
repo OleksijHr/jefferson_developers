@@ -1,0 +1,258 @@
+@media only screen and (max-width: 767px) {
+  .header > .container {
+    width: 343px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    outline: 1px solid red;
+    /* position: absolute; */
+  }
+  .nav-img {
+    border-radius: 18px;
+  }
+  .nav-list {
+    display: none;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+  .header-navigation {
+    display: flex;
+    align-items: flex-start;
+    margin-right: auto;
+  }
+  .nav-logo {
+    display: flex;
+    gap: 8px;
+  }
+
+  .nav-text {
+    font-family: var(--primary-font);
+    color: var(--primary-txt-clr);
+    font-size: 16px;
+
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+  }
+  .burger-icon {
+    fill: white;
+  }
+  .burger-button {
+    display: block;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+
+  /* MOB MENU */
+
+  .mob-menu > .container {
+    width: 343px;
+  }
+  .is-hidden {
+    display: none;
+  }
+
+  .mob-menu {
+    padding-top: 32px;
+    padding-bottom: 64px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(59, 59, 59, 0.2) 16.67%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      url('../img/projects/mob-menu-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .mob-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .mob-menu-close-btn {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-bottom: 16px;
+  }
+  .mob-menu-list {
+    margin-top: 302px;
+    margin-bottom: 289px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  .mob-menu-item {
+    height: 100%;
+  }
+
+  .mob-menu-item-link {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    text-decoration: underline;
+  }
+
+  .mob-menu-order-btn {
+    margin-bottom: 64px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 31.5px;
+    padding-left: 31.5px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    background-color: #ed3b44;
+    border-radius: 60px;
+  }
+
+  .mob-menu-btn-position {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .header > .container {
+    max-width: 704px;
+    width: 100%;
+  }
+
+  .mob-menu {
+    display: none;
+  }
+
+  .header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .burger-button {
+    display: none;
+  }
+
+  .nav-list-menu {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    text-decoration: underline;
+  }
+
+  .nav-logo {
+    display: flex;
+    gap: 8px;
+  }
+
+  .header-navigation {
+    display: flex;
+    align-items: flex-start;
+    margin-right: auto;
+    justify-content: space-between;
+  }
+
+  .nav-btn {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-right: 24px;
+    padding-left: 24px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    background-color: #ed3b44;
+    border-radius: 60px;
+  }
+  .nav-img {
+    border-radius: 18px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header > .container {
+    max-width: 1376px;
+    width: 100%;
+  }
+  .mob-menu {
+    display: none;
+  }
+  .header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .burger-button {
+    display: none;
+  }
+
+  .nav-list-menu {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    text-decoration: underline;
+  }
+
+  .nav-logo {
+    display: flex;
+    gap: 8px;
+  }
+
+  .header-navigation {
+    display: flex;
+    align-items: flex-start;
+    margin-right: auto;
+    justify-content: space-between;
+  }
+
+  .nav-btn {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-right: 24px;
+    padding-left: 24px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    background-color: #ed3b44;
+    border-radius: 60px;
+  }
+
+  .nav-img {
+    border-radius: 18px;
+  }
+}
