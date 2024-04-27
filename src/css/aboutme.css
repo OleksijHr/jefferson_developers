@@ -12,6 +12,10 @@
   overflow: hidden;
 }
 
+.apostrophe {
+  content: '\0027';
+}
+
 .about-me-work-and-photo {
   width: 100%;
   display: flex;
@@ -132,7 +136,7 @@
   gap: 0px;
 }
 
-.about-me-swiper-container {
+.about-me-swiper-box {
   width: 260px;
   height: 130px;
   margin: 0;
@@ -163,3 +167,8 @@
   line-height: 1.5;
   letter-spacing: -0.02em;
 }
+
+/* buttons */
+/* .about-me-btn{} */
+/* .about-me-arrow-up{} */
+/* about-me-arrow-down{} */
