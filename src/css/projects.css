@@ -1,5 +1,6 @@
 body {
   background-color: rgba(28, 29, 32, 1);
+  padding: auto;
 
   display: flex;
   flex-direction: column;
@@ -22,11 +23,11 @@ ul {
     justify-content: flex-start;
     background-color: rgba(250, 250, 250, 1);
 
-    width: 92%;
+    width: 86%;
     height: 90vh;
     border-radius: 3%;
   }
-  .swiping-slide {
+  .swiper-slide {
     background-color: rgba(250, 250, 250, 1);
     border-radius: 3%;
   }
@@ -43,11 +44,13 @@ ul {
 
   .develop-content-icons {
     box-sizing: border-box;
-    margin: 32px;
+    margin-left: 32px;
+    padding-right: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 92%;
+    padding-top: 32px;
 
     align-content: center;
     gap: 6px;
@@ -82,7 +85,7 @@ ul {
     margin-right: 38px;
     margin-top: 96px;
     margin-bottom: 10%;
-    padding-right: 6px;
+    padding-right: 12px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -144,6 +147,7 @@ ul {
     align-items: center;
     justify-content: center;
     gap: 12px;
+    margin-bottom: 32px;
   }
   .swiper-button-prev {
     width: 52px;
