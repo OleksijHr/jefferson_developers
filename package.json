@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/jefferson_developers/",
-    "preview": "vite preview"
+    "preview": "jefferson_developers"
   },
   "devDependencies": {
     "glob": "^8.1.0",
@@ -15,6 +15,10 @@
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "dependencies": {
+
+    "accordion-js": "^3.3.4",
+    "simplelightbox": "^2.14.3",
+
     "swiper": "^11.1.1",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
