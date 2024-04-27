@@ -2,15 +2,14 @@
   --primary-font: 'Inter Tight', sans-serif;
   --logo-font: 'Inter Tight', sans-serif;
   /* Color */
-  --primary-txt-clr: #FAFAFA;
-  --primary-bg-clr: #1C1D20;
+  --primary-txt-clr: #fafafa;
+  --primary-bg-clr: #1c1d20;
   --secondarybg-clr: #242527;
-  --third-clr: #3B3B3B;
-  --primary-clr: #ED3B44;
-  --hover-btn-clr: #E0373F;
-  --succes-clr: #3CBC81;
-  --error-clr: #E74A3B;
-
+  --third-clr: #3b3b3b;
+  --primary-clr: #ed3b44;
+  --hover-btn-clr: #e0373f;
+  --succes-clr: #3cbc81;
+  --error-clr: #e74a3b;
 
   /* Others */
   --border: 1px solid;
@@ -20,12 +19,9 @@
   --anim-superfast: 150ms ease-in;
   --anim-fast: 300ms ease-in;
   --anim-slow: 800ms ease;
-
 }
 
-
 /* Reset styles */
-
 
 * {
   margin: 0;
@@ -72,4 +68,17 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
