@@ -1,23 +1,12 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const mobMenuOpenBtn = document.querySelector('.mob-menu-open');
-  const mobMenu = document.querySelector('.header-mobile-menu');
-  const mobMenuCloseBtn = mobMenu.querySelector('.header-mobile-menu-close');
-  const mobMenuLinks = mobMenu.querySelectorAll('.nav-link');
+const refs = {
+  openMenuBtn: document.querySelector('[data-menu-open]'),
+  closeMenuBtn: document.querySelector('[data-menu-close]'),
+  menu: document.querySelector('[data-menu]'),
+};
 
-  // Відкриття мобільного меню
-  mobMenuOpenBtn.addEventListener('click', function () {
-    mobMenu.classList.add('open');
-  });
+refs.openMenuBtn.addEventListener('click', toggleModal);
+refs.closeMenuBtn.addEventListener('click', toggleModal);
 
-  // Закриття мобільного меню
-  function closeMobMenu() {
-    mobMenu.classList.remove('open');
-  }
-
-  mobMenuCloseBtn.addEventListener('click', closeMobMenu);
-
-  // Обробка click на посиланнях в мобільному меню
-  mobMenuLinks.forEach(link => {
-    link.addEventListener('click', closeMobMenu);
-  });
-});
+function toggleModal() {
+  refs.menu.classList.toggle('is-open');
+}
