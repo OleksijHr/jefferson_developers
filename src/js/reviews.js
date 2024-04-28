@@ -4,7 +4,7 @@
 import * as api from './api';
 import './swiper';
 
-const reviewsList = document.querySelector('.menu-reviews-list-ul');
+const reviewsList = document.querySelector('.menu-reviews-list');
 
 api
   .searchReviews()
@@ -19,7 +19,7 @@ api
 function createReviews(arrReviews) {
   return arrReviews
     .map(({ _id, author, avatar_url, review }) => {
-      return `<li class="menu-reviews-item-li menu-item swiper-slide-reviews" id="${_id}">
+      return `<li class="menu-reviews-item menu-item swiper-slide" id="${_id}">
          <img
            class="icon-reviews-img"
            src="${avatar_url}"
