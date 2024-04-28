@@ -1,18 +1,23 @@
-// логіка секції
+document.addEventListener('DOMContentLoaded', function () {
+  const mobMenuOpenBtn = document.querySelector('.mob-menu-open');
+  const mobMenu = document.querySelector('.header-mobile-menu');
+  const mobMenuCloseBtn = mobMenu.querySelector('.header-mobile-menu-close');
+  const mobMenuLinks = mobMenu.querySelectorAll('.nav-link');
 
-const refs = {
-  openMenuBtn: document.querySelector('[data-menu-open]'),
-  closeMenuBtn: document.querySelector('[data-menu-close]'),
-  menu: document.querySelector('[data-menu]'),
-};
+  // Відкриття мобільного меню
+  mobMenuOpenBtn.addEventListener('click', function () {
+    mobMenu.classList.add('open');
+  });
 
-refs.openMenuBtn.addEventListener('click', openModal);
-refs.closeMenuBtn.addEventListener('click', closeModal);
+  // Закриття мобільного меню
+  function closeMobMenu() {
+    mobMenu.classList.remove('open');
+  }
 
-function openModal() {
-  refs.menu.classList.remove('is-hidden');
-}
+  mobMenuCloseBtn.addEventListener('click', closeMobMenu);
 
-function closeModal() {
-  refs.menu.classList.add('is-hidden');
-}
+  // Обробка click на посиланнях в мобільному меню
+  mobMenuLinks.forEach(link => {
+    link.addEventListener('click', closeMobMenu);
+  });
+});
