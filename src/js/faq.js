@@ -1,0 +1,1 @@
+import { accordion } from './accordion';

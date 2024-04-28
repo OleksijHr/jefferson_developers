@@ -1,15 +1,6 @@
 /* work&photo */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.apostrophe {
+  content: '\0027';
 }
 
 .about-me-work-and-photo {
@@ -132,7 +123,7 @@
   gap: 0px;
 }
 
-.about-me-swiper-container {
+.about-me-swiper-box {
   width: 260px;
   height: 130px;
   margin: 0;
@@ -163,3 +154,8 @@
   line-height: 1.5;
   letter-spacing: -0.02em;
 }
+
+/* buttons */
+/* .about-me-btn{} */
+/* .about-me-arrow-up{} */
+/* about-me-arrow-down{} */
