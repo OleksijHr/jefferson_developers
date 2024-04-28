@@ -4,7 +4,7 @@ import 'accordion-js/dist/accordion.min.css';
 
 //                        обгортка на усі елементи до яких повинен застосовуватись
 //                                                  |
-export const accordion = new Accordion('.accordion-container', {
+new Accordion('.accordion-container', {
   duration: 400,
   showMultiple: true,
   onOpen: function(currentElement) {
@@ -26,3 +26,5 @@ export const accordion = new Accordion('.accordion-container', {
 // Detach events
 // const accordion = new Accordion('.container-first');
 // accordion.detachEvents();
+
+// new Accordion(".accordion-container");
