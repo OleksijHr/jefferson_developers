@@ -1,19 +1,27 @@
-@media only screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 375px) {
   .header > .container {
     width: 343px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
   }
-
+  .dropdown {
+    display: none;
+  }
   .header {
+    width: 343px;
     padding-top: 32px;
     padding-bottom: 32px;
     outline: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     /* position: absolute; */
   }
-  .nav-img {
+  .navigation-img {
     border-radius: 18px;
+    width: 80px;
+    height: 80px;
   }
   .nav-list {
     display: none;
@@ -25,7 +33,7 @@
   .header-navigation {
     display: flex;
     align-items: flex-start;
-    margin-right: auto;
+    /* margin-right: auto; */
   }
   .nav-logo {
     display: flex;
@@ -40,6 +48,11 @@
     line-height: 1.25;
     letter-spacing: -0.02em;
   }
+
+  .nav-text-star {
+    font-size: 8px;
+    vertical-align: top;
+  }
   .burger-icon {
     fill: white;
   }
@@ -49,13 +62,14 @@
     height: 28px;
     padding: 0;
     border: none;
-    background-color: transparent;
+    background-color: red;
   }
 
   /* MOB MENU */
 
   .mob-menu > .container {
-    width: 343px;
+    max-width: 343px;
+    width: 100%;
   }
   .is-hidden {
     display: none;
@@ -78,7 +92,7 @@
         rgba(59, 59, 59, 0.2) 16.67%,
         rgba(255, 255, 255, 0) 100%
       ),
-      url('../img/projects/mob-menu-background.jpg');
+      url('../img/mob-menu/mob-menu-background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -119,7 +133,7 @@
     font-weight: 500;
     line-height: 1.21;
     letter-spacing: -0.02em;
-    color: #fafafa;
+    color: var(--primary-txt-clr);
     text-decoration: underline;
   }
 
@@ -133,8 +147,8 @@
     font-weight: 500;
     line-height: 1.21;
     letter-spacing: -0.02em;
-    color: #fafafa;
-    background-color: #ed3b44;
+    color: var(--primary-txt-clr);
+    background-color: var(--primary-clr);
     border-radius: 60px;
   }
 
@@ -143,7 +157,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 375px) and (max-width: 768px) {
   .header > .container {
     max-width: 704px;
     width: 100%;
@@ -152,6 +166,10 @@
   .mob-menu {
     display: none;
   }
+  .nav-text-star {
+    font-size: 8px;
+    vertical-align: top;
+  }
 
   .header {
     padding-top: 32px;
@@ -167,7 +185,7 @@
     font-weight: 500;
     line-height: 1.21;
     letter-spacing: -0.02em;
-    color: #fafafa;
+    color: var(--primary-txt-clr);
     text-decoration: underline;
   }
 
@@ -192,19 +210,85 @@
     font-weight: 500;
     line-height: 1.21;
     letter-spacing: -0.02em;
-    color: #fafafa;
-    background-color: #ed3b44;
+    color: var(--primary-txt-clr);
+    background-color: var(--primary-clr);
     border-radius: 60px;
   }
-  .nav-img {
+
+  .nav-btn:hover,
+  .nav-btn:focus {
+    background-color: transparent;
+    border: 1px solid var(--primary-txt-clr);
+  }
+  .navigation-img {
     border-radius: 18px;
+  }
+
+  /* Hoverable Dropdown */
+
+  .dropbtn {
+    margin-bottom: 13.5px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+    color: var(--primary-txt-clr);
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+
+    z-index: 1;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .dropdown-content a {
+    width: 67px;
+    color: var(--primary-txt-clr);
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+    display: block;
+    justify-content: center;
+  }
+
+  .dropdown-content a:hover {
+    background-color: transparent;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: transparent;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .header > .container {
     max-width: 1376px;
     width: 100%;
+  }
+
+  .nav-text-star {
+    font-size: 8px;
+    vertical-align: top;
   }
   .mob-menu {
     display: none;
@@ -222,7 +306,7 @@
     font-weight: 500;
     line-height: 1.21;
     letter-spacing: -0.02em;
-    color: #fafafa;
+    color: var(--primary-txt-clr);
     text-decoration: underline;
   }
 
@@ -247,12 +331,68 @@
     font-weight: 500;
     line-height: 1.21;
     letter-spacing: -0.02em;
-    color: #fafafa;
-    background-color: #ed3b44;
+    color: var(--primary-txt-clr);
+    background-color: var(--primary-clr);
     border-radius: 60px;
   }
-
-  .nav-img {
+  .nav-btn:hover,
+  .nav-btn:focus {
+    background-color: transparent;
+    border: 1px solid var(--primary-txt-clr);
+  }
+  .navigation-img {
     border-radius: 18px;
+  }
+
+  .dropbtn {
+    margin-bottom: 13.5px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+    color: var(--primary-txt-clr);
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    z-index: 1;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .dropdown-content a {
+    width: 67px;
+    color: var(--primary-txt-clr);
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+    display: block;
+    justify-content: center;
+  }
+
+  .dropdown-content a:hover {
+    background-color: transparent;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: transparent;
   }
 }
