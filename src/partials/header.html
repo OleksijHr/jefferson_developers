@@ -1,21 +1,64 @@
 <header class="header">
-  <nav class="nav">
-    <a href=""><img src="" alt="" /></a>
-    <ul class="nav-list">
-      <a href="">Menu</a>
-      <li class="nav-item">
-        <a href="#aboutme" class="nav-link">About me</a>
-      </li>
-      <li class="nav-item">
-        <a href="#benefits" class="nav-link">Benefits</a>
-      </li>
-      <li class="nav-item">
-        <a href="#projects" class="nav-link">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a href="#faq" class="nav-link">FAQ</a>
-      </li>
-    </ul>
-    <a class="nav-btn" href="#work-together">Order the project</a>
-  </nav>
+  <div class="container">
+    <nav class="header-navigation">
+      <div class="nav-logo">
+        <a class="nav-logo-link" href="#aboutme"
+          ><img
+            class="navigation-img"
+            src="/"
+            srcset="/"
+            alt="jefferson"
+            width="80"
+            height="80"
+        /></a>
+        <p class="nav-text">
+          jefferson <span class="nav-text-star">&#10033;</span>
+        </p>
+      </div>
+      <!-- Hoverable Dropdown -->
+      <div class="dropdown">
+        <button class="dropbtn button">Menu</button>
+        <div class="dropdown-content">
+          <a href="#aboutme" class="nav-link">About me</a>
+          <a href="#benefits" class="nav-link">Benefits</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#faq" class="nav-link">FAQ</a>
+        </div>
+      </div>
+      <a class="navigation-btn" href="#work-together">Order the project</a>
+    </nav>
+    <button class="mobile-menu-open" type="button" data-menu-open>
+      <svg class="burger-icon" width="28" height="28">
+        <use href="../img/icons.svg#icon-icon"></use>
+      </svg>
+    </button>
+  </div>
+  <!-- MOB MENU -->
+  <div class="mob-menu is-hidden" data-menu>
+    <div class="container">
+      <button class="mob-menu-close" type="button" data-menu-close>x</button>
+      <div class="mob-menu-list-row">
+        <ul class="mob-menu-list">
+          <li class="mob-menu-item">
+            <a class="mob-menu-item-link" href="#aboutme">About me</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="mob-menu-item-link" href="#benefits">Benefits</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="mob-menu-item-link" href="#projects">Projects</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="mob-menu-item-link" href="#faq">FAQ</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mob-menu-btn-bottom">
+        <a class="mob-menu-order-btn" href="#work-together"
+          >Order the project</a
+        >
+      </div>
+    </div>
+  </div>
 </header>

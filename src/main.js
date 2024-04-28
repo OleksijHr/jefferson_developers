@@ -6,3 +6,5 @@ import "./js/modal";
 
 // Reviews
 import "./js/reviews";
+
+import "./js/accordion";

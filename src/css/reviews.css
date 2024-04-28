@@ -1,0 +1,133 @@
+@media only screen and (max-width: 375px) {
+  .reviews-wrap {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 768x) {
+  .reviews-wrap {
+    width: calc((100% - 16px) / 2);
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .reviews-wrap {
+    width: calc((100% - 48px) / 4);
+  }
+}
+
+.reviews-title-h2 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: rgba(250, 250, 250, 0.4);
+  margin-bottom: 32px;
+}
+
+@media only screen and (max-width: 375px) {
+  .menu-reviews-list-ul {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-reviews-list-ul {
+    width: calc((100% - 16px) / 2);
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .menu-reviews-list-ul {
+    width: calc((100% - 48px) / 4);
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .menu-reviews-item-li {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: solid 1px rgba(250, 250, 250, 0.2);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-reviews-item-li {
+    width: 344px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .menu-reviews-item-li {
+    width: 332px;
+  }
+}
+
+.icon-reviews-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+
+  margin: 32px auto 32px 24px;
+}
+
+.container-reviews-title-text {
+  width: 100%;
+}
+
+.reviews-title-h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.4px;
+  text-align: left;
+  color: #fafafa;
+  margin-bottom: 8px;
+  padding-left: 24px;
+}
+
+.reviews-text {
+  width: 100%;
+  color: rgba(250, 250, 250, 0.6);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+  letter-spacing: -0.02em;
+  margin-bottom: 32px;
+  padding: 34px 24px;
+}
+
+.arrow-icon {
+  width: 156px;
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: auto;
+  gap: 20px;
+}
+
+.round-button {
+  background-color: #242527;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+}
