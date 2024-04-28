@@ -1,11 +1,11 @@
 .covers-section {
-    /* background-image: url(./img/Rectangle\ 13.png); */
-    /* background-size: cover; */
-    /* background-position: center; */
+    background-image: url(../img/covers/covers@1.jpg);
+    background-size: cover;
+    background-position: center;
     overflow: hidden;
     min-width: 320px;
     max-height: 508px;
-    /* background-color: aliceblue; */
+   
 }
 
 .covers {
@@ -28,18 +28,16 @@
     min-height: 162px;
     margin-right: 32px;
     animation: runImg 35s infinite linear;
-    background-color: brown;
+    /* background-color: brown; */
 }
 .covers-list-img{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* object-fit: contain; */
+    object-fit: contain;
 }
-.covers-list-img-box{
-    position: relative;
-    overflow: hidden;
-}
+
+
 @keyframes runImg {
     from {
         transform: translateX(0);
