@@ -1,24 +1,25 @@
 // імпортувати з api.js
 // логіка секції
 
-import * as api from "./api";
-import "./swiper";
+import * as api from './api';
+import './swiper';
 
-const reviewsList = document.querySelector(".menu-reviews-list");
+const reviewsList = document.querySelector('.menu-reviews-list-ul');
 
-
-api.searchReviews()
+api
+  .searchReviews()
   .then(data => {
     console.log(data);
-    reviewsList.insertAdjacentHTML("beforeend", createReviews(data))
+    reviewsList.insertAdjacentHTML('beforeend', createReviews(data));
   })
   .catch(error => {
     console.log(error);
-})
+  });
 
-function createReviews (arrReviews) {
-    return arrReviews.map(({ _id, author, avatar_url, review }) => {
-        return `<li class="menu-reviews-item menu-item swiper-slide" id="${_id}">
+function createReviews(arrReviews) {
+  return arrReviews
+    .map(({ _id, author, avatar_url, review }) => {
+      return `<li class="menu-reviews-item-li menu-item swiper-slide-reviews" id="${_id}">
          <img
            class="icon-reviews-img"
            src="${avatar_url}"
@@ -30,8 +31,7 @@ function createReviews (arrReviews) {
            <h3 class="reviews-title-h3">${author}</h3>
            <p class="reviews-text">${review}</p>
          </div>
-      </li>`
+      </li>`;
     })
-    .join("");
+    .join('');
 }
-
