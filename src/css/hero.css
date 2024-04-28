@@ -99,9 +99,7 @@
 }
 
 /* Стилі для ретіна-дисплеїв мобільних пристроїв */
-@media
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .hero {
     background-image: url('/src/img/hero/hero_mob@2x.jpg');
   }
@@ -115,9 +113,7 @@
 }
 
 /* Стилі для ретіна-дисплеїв планшетів */
-@media
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .hero {
     background-image: url('/src/img/hero/hero_tab@2x.jpg');
   }
@@ -131,11 +127,8 @@
 }
 
 /* Стилі для ретіна-дисплеїв десктопів */
-@media
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .hero {
     background-image: url('/src/img/hero/hero_desktop@2x.jpg');
   }
 }
-
