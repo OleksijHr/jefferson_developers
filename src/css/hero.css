@@ -1,5 +1,4 @@
 .hero {
-  background-image: url('path/to/background-image.png');
   background-size: cover;
   background-position: center;
   color: #ffffff;
@@ -10,11 +9,23 @@
   text-align: center;
 }
 
+.hero h1 {
+  font-family: 'Inter Tight';
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: -0.03em;
+  text-align: left; /* Змінено на ліве вирівнювання */
+}
+
 .buttons-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+  justify-content: flex-end; /* Змінено на вирівнювання по правому краю */
+  align-items: flex-end; /* Змінено на вирівнювання по нижньому краю */
+  position: absolute; /* Встановлено позиціонування absolute */
+  bottom: 0; /* Вирівнюємо по нижньому краю .hero */
+  right: 0; /* Вирівнюємо по правому краю .hero */
+  margin-bottom: 20px; /* Відступ від нижнього краю .hero */
 }
 
 .social-links,
@@ -79,3 +90,52 @@
   width: auto;
   padding: 0 20px;
 }
+
+/* Стилі для мобільних пристроїв */
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+  .hero {
+    background-image: url('/src/img/hero/hero_mob@1x.jpg');
+  }
+}
+
+/* Стилі для ретіна-дисплеїв мобільних пристроїв */
+@media
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+  .hero {
+    background-image: url('/src/img/hero/hero_mob@2x.jpg');
+  }
+}
+
+/* Стилі для планшетів */
+@media only screen and (min-width: 768px) {
+  .hero {
+    background-image: url('/src/img/hero/hero_tab@1x.jpg');
+  }
+}
+
+/* Стилі для ретіна-дисплеїв планшетів */
+@media
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+  .hero {
+    background-image: url('/src/img/hero/hero_tab@2x.jpg');
+  }
+}
+
+/* Стилі для десктопів */
+@media only screen and (min-width: 1440px) {
+  .hero {
+    background-image: url('/src/img/hero/hero_desktop@1x.jpg');
+  }
+}
+
+/* Стилі для ретіна-дисплеїв десктопів */
+@media
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+  .hero {
+    background-image: url('/src/img/hero/hero_desktop@2x.jpg');
+  }
+}
+
