@@ -20,7 +20,7 @@
     width: 282px;
     display: flex;
     margin-bottom: 32px;
-    /* transform: rotate(16deg); */
+    transform: rotate(16deg);
 }
 
 .covers-list-item {
@@ -36,7 +36,10 @@
     justify-content: center;
     /* object-fit: contain; */
 }
-
+.covers-list-img-box{
+    position: relative;
+    overflow: hidden;
+}
 @keyframes runImg {
     from {
         transform: translateX(0);
@@ -55,7 +58,7 @@
     }
     .covers {
         height: 960px;
-        left: -50px;
+        left: -210px;
         top: -152px;
     }
      .covers-list {
@@ -73,7 +76,7 @@
 /* desltop */
 @media only screen and (min-width: 1200px) {
     .covers-section {
-        /* min-width: 768px; */
+        min-width: 768px;
         min-height: 960px;
     }
         .covers {
