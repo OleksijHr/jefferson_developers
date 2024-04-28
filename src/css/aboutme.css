@@ -11,6 +11,20 @@
   padding-bottom: 16px;
 }
 
+@media (min-width: 768px) {
+  .about-me-work-and-photo {
+    flex-direction: row;
+    gap: 16px;
+    padding-bottom: 48px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .about-me-work-and-photo {
+    width: 680px;
+  }
+}
+
 .about-me-work {
   padding: 32px 32px 272px 32px;
   border-radius: 24px;
@@ -18,7 +32,7 @@
   height: 500px;
 }
 
-.about-me-work-text {
+.about-me-work .about-me-work-text {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 24px;
@@ -27,8 +41,15 @@
   text-transform: uppercase;
 }
 
+@media (min-width: 768px) {
+  .about-me-work-text {
+    font-size: 38px;
+    line-height: 1.05263;
+  }
+}
+
 .about-me-work-text-red {
-  color: #ed3b44;
+  color: var(--primary-clr);
 }
 
 .about-me-work-text-grey {
@@ -40,6 +61,24 @@
   width: 100%;
   height: 500px;
   overflow: hidden;
+}
+
+@media (min-width: 375px) {
+  .about-me-photo {
+    width: 343px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-me-photo {
+    height: 700px;
+    width: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  .about-me-photo {
+    width: 680px;
+  }
 }
 
 .about-me-photo .about-me-img {
@@ -54,14 +93,35 @@
   padding-bottom: 32px;
 }
 
+@media (min-width: 768px) {
+  .about-me-about {
+    padding-top: 32px;
+    padding-bottom: 64px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .about-me-about {
+    padding-top: 48px;
+    padding-bottom: 96px;
+  }
+}
+
 .about-me-about-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
+@media (min-width: 768px) {
+  .about-me-about-list {
+    gap: 32px;
+  }
+}
+
 .about-me-about-list .about-me-about-list-item {
   color: inherit;
+  background-color: inherit;
   border-top: none;
   border-right: none;
   border-left: none;
@@ -98,8 +158,27 @@
   letter-spacing: -0.02em;
 }
 
+@media (min-width: 768px) {
+  .about-me-about-text {
+    padding-top: 12px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .about-me-about-text {
+    padding: 8px 68px 32px 696px;
+  }
+}
+
 .about-me-about-text-box {
   padding-bottom: 32px;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .about-me-about-text-box {
+    padding-bottom: 16px;
+  }
 }
 
 .about-me-about-role {
@@ -123,10 +202,46 @@
   gap: 0px;
 }
 
+@media (min-width: 375px) {
+  .about-me-skills {
+    gap: 55px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-me-skills {
+    width: 704px;
+    height: 200px;
+    gap: 64px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .about-me-skills {
+    width: 1312px;
+    height: 200px;
+    gap: 72px;
+  }
+}
+
 .about-me-swiper-box {
   width: 260px;
   height: 130px;
   margin: 0;
+}
+
+@media (min-width: 768px) {
+  .about-me-swiper-box {
+    width: 600px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .about-me-swiper-box {
+    width: 1200px;
+    height: 200px;
+  }
 }
 
 .about-me-skillslist {
@@ -134,6 +249,20 @@
   flex-direction: row;
   width: 260px;
   height: 130px;
+}
+
+@media (min-width: 768px) {
+  .about-me-skillslist {
+    width: 600px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .about-me-skillslist {
+    width: 1200px;
+    height: 200px;
+  }
 }
 
 .about-me-skillslist-item {
@@ -147,6 +276,13 @@
   border: 1px solid rgba(250, 250, 250, 0.2);
 }
 
+@media (min-width: 768px) {
+  .about-me-skillslist-item {
+    width: 200px;
+    height: 200px;
+  }
+}
+
 .about-me-skillslist-text {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
@@ -155,7 +291,56 @@
   letter-spacing: -0.02em;
 }
 
+@media (min-width: 768px) {
+  .about-me-skillslist-text {
+    font-size: 20px;
+  }
+}
+
 /* buttons */
-/* .about-me-btn{} */
-/* .about-me-arrow-up{} */
-/* about-me-arrow-down{} */
+.about-me-btn {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px;
+  width: 36px;
+  height: 36px;
+  background-color: inherit;
+}
+
+@media (min-width: 768px) {
+  .about-me-btn {
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.about-me-arrow-right {
+  stroke: var(--third-clr);
+  height: 28px;
+  width: 28px;
+}
+
+.about-me-btn-swiper {
+  background-color: inherit;
+  border: none;
+  padding: 0px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  margin: 0;
+  position: static;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me-arrow-up {
+  fill: var(--primary-txt-clr);
+}
+
+.about-me-arrow-down {
+  fill: var(--primary-txt-clr);
+}
