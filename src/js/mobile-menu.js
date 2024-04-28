@@ -6,9 +6,13 @@
 //   menu: document.querySelector('[data-menu]'),
 // };
 
-// refs.openMenuBtn.addEventListener('click', toggleModal);
-// refs.closeMenuBtn.addEventListener('click', toggleModal);
+// refs.openMenuBtn.addEventListener('click', openModal);
+// refs.closeMenuBtn.addEventListener('click', closeModal);
 
-// function toggleModal() {
-//   refs.menu.classList.toggle('is-open');
+// function openModal() {
+//   refs.menu.classList.remove('is-hidden');
+// }
+
+// function closeModal() {
+//   refs.menu.classList.add('is-hidden');
 // }
