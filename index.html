@@ -23,7 +23,7 @@
     <script type="module" crossorigin src="/jefferson_developers/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/jefferson_developers/assets/vendor-52a7ade3.js">
     <link rel="stylesheet" href="/jefferson_developers/assets/vendor-4e87ff37.css">
-    <link rel="stylesheet" href="/jefferson_developers/assets/index-d823856f.css">
+    <link rel="stylesheet" href="/jefferson_developers/assets/index-687dec35.css">
   </head>
   <body>
     <main>
@@ -126,49 +126,37 @@
   <div class="container">
     <h2 class="visually-hidden">About me</h2>
     <div class="about-me-work-and-photo">
-      <div class="about-me-work">
-        <p class="about-me-work-text">
-          I work with people all over the world to create impressive and
-          <span class="about-me-work-text-red">functional</span>
-          <span class="about-me-work-text-grey">websites</span> that reflect
-          each client<span class="apostrophe">&#39;</span>s unique personality.
-        </p>
-      </div>
-      <div class="about-me-photo">
-        <picture>
-          <source
-            media="(max-width: 767px)"
-            srcset="
-              ../img/about-me/about_me_mob@1.jpg 1x,
-              ../img/about-me/about_me_mob@2.jpg 2x
-            "
-          />
+      <p class="about-me-work">
+        I work with people all over the world to create impressive and
+        <span class="about-me-work-text-red">functional</span>
+        <span class="about-me-work-text-grey">websites</span> that reflect each
+        client<span class="apostrophe">&#39;</span>s unique personality.
+      </p>
 
-          <source
-            media="(max-width: 1199px)"
-            srcset="
-              ../img/about-me/about_me_tab@1.jpg 1x,
-              ../img/about-me/about_me_tab@2.jpg 2x
-            "
-          />
+      <picture class="about-me-photo">
+        <source
+          media="(max-width: 767px)"
+          srcset="/jefferson_developers/assets/about_me_mob@1-480a2c3f.jpg 1x, /jefferson_developers/assets/about_me_mob@2-a0ac2a77.jpg 2x"
+        />
 
-          <source
-            media="(min-width: 1200px)"
-            srcset="
-              ../img/about-me/about_me_desk@1.jpg 1x,
-              ../img/about-me/about_me_desk@2.jpg 2x
-            "
-          />
+        <source
+          media="(max-width: 1199px)"
+          srcset="/jefferson_developers/assets/about_me_tab@1-e98b523a.jpg 1x, /jefferson_developers/assets/about_me_tab@2-ec79f717.jpg 2x"
+        />
 
-          <img
-            src="../img/about-me/about_me_desk@1.jpg"
-            alt="Lloyd Jefferson"
-            width="680"
-            height="700"
-            class="about-me-img"
-          />
-        </picture>
-      </div>
+        <source
+          media="(min-width: 1200px)"
+          srcset="/jefferson_developers/assets/about_me_desk@1-a70ae11b.jpg 1x, /jefferson_developers/assets/about_me_desk@2-9229766f.jpg 2x"
+        />
+
+        <img
+          src="/jefferson_developers/assets/about_me_desk@1-a70ae11b.jpg"
+          alt="Lloyd Jefferson"
+          width="680"
+          height="700"
+          class="about-me-img"
+        />
+      </picture>
     </div>
 
     <ul class="about-me-about-list about-me-about">
@@ -177,7 +165,7 @@
           <h3 class="about-me-about-header">ABOUT ME</h3>
           <button class="about-me-btn" type="button">
             <svg class="about-me-arrow-up" width="20" height="20">
-              <use href="href=..img/icons.svg#icon-Icon_up"></use>
+              <use href="/jefferson_developers/assets/icons-c363e33d.svg#Icon_up"></use>
             </svg>
           </button>
         </div>
@@ -211,8 +199,8 @@
         <div class="about-me-about-header-n-btn">
           <h3 class="about-me-about-header">ROLE</h3>
           <button class="about-me-btn" type="button">
-            <svg class="about-me-arrow-down" width="28" height="28">
-              <use href="href=..img/icons.svg#icon-Icon_down"></use>
+            <svg class="about-me-arrow-down" width="20" height="20">
+              <use href="/jefferson_developers/assets/icons-c363e33d.svg#Icon_down"></use>
             </svg>
           </button>
         </div>
@@ -229,7 +217,7 @@
           <h3 class="about-me-about-header">EDUCATION</h3>
           <button class="about-me-btn" type="button">
             <svg class="about-me-arrow-down" width="20" height="20">
-              <use href="href=..img/icons.svg#icon-Icon_down"></use>
+              <use href="/jefferson_developers/assets/icons-c363e33d.svg#Icon_down"></use>
             </svg>
           </button>
         </div>
@@ -249,34 +237,30 @@
       </li>
     </ul>
 
-    <div class="about-me-skills">
-      <div class="about-me-swiper-box">
-        <ul class="about-me-skillslist">
-          <li class="about-me-skillslist-item about-me-skillslist-text">
-            HTML/CSS
-          </li>
-          <li class="about-me-skillslist-item about-me-skillslist-text">
-            JavaScript
-          </li>
-          <li class="about-me-skillslist-item about-me-skillslist-text">
-            React
-          </li>
-          <li class="about-me-skillslist-item about-me-skillslist-text">
-            Node. js
-          </li>
-          <li class="about-me-skillslist-item about-me-skillslist-text">
-            React Native
-          </li>
-          <li class="about-me-skillslist-item about-me-skillslist-text">
-            Soft skills
-          </li>
-        </ul>
-        <button class="about-me-btn-swiper" type="button">
-          <svg class="about-me-arrow-right" width="20" height="20">
-            <use href="href=..img/icons.svg#icon-arrow-right"></use>
-          </svg>
-        </button>
-      </div>
+    <div class="about-me-swiper-box">
+      <ul class="about-me-skillslist">
+        <li class="about-me-skillslist-item about-me-skillslist-text">
+          HTML/CSS
+        </li>
+        <li class="about-me-skillslist-item about-me-skillslist-text">
+          JavaScript
+        </li>
+        <li class="about-me-skillslist-item about-me-skillslist-text">React</li>
+        <li class="about-me-skillslist-item about-me-skillslist-text">
+          Node. js
+        </li>
+        <li class="about-me-skillslist-item about-me-skillslist-text">
+          React Native
+        </li>
+        <li class="about-me-skillslist-item about-me-skillslist-text">
+          Soft skills
+        </li>
+      </ul>
+      <button class="about-me-btn-swiper" type="button">
+        <svg class="about-me-arrow-right" width="40" height="40">
+          <use href="/jefferson_developers/assets/icons-c363e33d.svg#arrow-right"></use>
+        </svg>
+      </button>
     </div>
   </div>
 </section>
