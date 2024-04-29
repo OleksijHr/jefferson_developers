@@ -9,7 +9,7 @@ ul {
   padding: 0;
 }
 /* Для мобільних пристроїв з шириною від 320px до 375px */
-@media screen and (min-width: 320px) and (max-width: 375px) {
+@media screen and (min-width: 320px) and (max-width: 374px) {
   .swiping-page {
     border-radius: 3%;
     background-color: rgba(250, 250, 250, 1);
@@ -126,9 +126,31 @@ ul {
   .project-picture {
     width: 100%;
   }
+  .swiper-buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 52px;
+    margin-bottom: 96px;
+  }
+  .swiper-button-prev {
+    width: 52px;
+    height: 52px;
+    border-radius: 60px;
+    border: 1px solid rgba(250, 250, 250, 1);
+    background-color: rgba(28, 29, 32, 1);
+  }
+  .swiper-button-next {
+    width: 52px;
+    height: 52px;
+    border-radius: 60px;
+    border: 1px solid rgba(250, 250, 250, 1);
+    background-color: rgba(28, 29, 32, 1);
+  }
 }
 /* Для екранів з шириною від 375px до 768px */
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 375px) {
   .swiping-page {
     border-radius: 3%;
     background-color: rgba(250, 250, 250, 1);
@@ -245,6 +267,28 @@ ul {
   .project-picture {
     width: 100%;
   }
+  .swiper-buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 52px;
+    margin-bottom: 96px;
+  }
+  .swiper-button-prev {
+    width: 52px;
+    height: 52px;
+    border-radius: 60px;
+    border: 1px solid rgba(250, 250, 250, 1);
+    background-color: rgba(28, 29, 32, 1);
+  }
+  .swiper-button-next {
+    width: 52px;
+    height: 52px;
+    border-radius: 60px;
+    border: 1px solid rgba(250, 250, 250, 1);
+    background-color: rgba(28, 29, 32, 1);
+  }
 }
 
 /* Для планшетів з шириною від 768px */
@@ -280,20 +324,21 @@ ul {
   }
 
   .develop-content-icons {
-    width: 312px;
+    display: inline-flex;
+    flex-direction: row;
+    padding-top: 0;
+    width: 100%;
     height: 55px;
-    margin-left: 64px;
-    display: flex;
+    margin: 0;
+    padding-left: 64px;
+    padding-right: 32px;
 
-    align-content: center;
     gap: 6px;
   }
   .develop-content-icons-item {
     display: inline-block;
     align-content: center;
     justify-content: center;
-    width: 80px;
-    height: 55px;
 
     border: 1px solid rgba(28, 29, 32, 0.2);
 
@@ -379,6 +424,28 @@ ul {
   .project-picture-container {
     flex: 1;
   }
+  .swiper-buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 64px;
+    margin-bottom: 96px;
+  }
+  .swiper-button-prev {
+    width: 68px;
+    height: 68px;
+    border-radius: 60px;
+    border: 1px solid rgba(250, 250, 250, 1);
+    background-color: rgba(28, 29, 32, 1);
+  }
+  .swiper-button-next {
+    width: 68px;
+    height: 68px;
+    border-radius: 60px;
+    border: 1px solid rgba(250, 250, 250, 1);
+    background-color: rgba(28, 29, 32, 1);
+  }
 }
 
 /* Для настільних комп'ютерів з шириною від 1440px */
@@ -420,20 +487,21 @@ ul {
   }
 
   .develop-content-icons {
-    width: 312px;
+    display: inline-flex;
+    flex-direction: row;
+    padding-top: 0;
+    width: 100%;
     height: 55px;
-    margin-left: 64px;
-    display: flex;
+    margin: 0;
+    padding-left: 64px;
+    padding-right: 32px;
 
-    align-content: center;
     gap: 6px;
   }
   .develop-content-icons-item {
     display: inline-block;
     align-content: center;
     justify-content: center;
-    width: 80px;
-    height: 55px;
     border: 1px solid rgba(28, 29, 32, 0.2);
 
     font-family: Inter Tight;
@@ -519,28 +587,26 @@ ul {
   .project-picture {
     width: 100%;
   }
-}
-.swiper-buttons-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 64px;
-  margin-bottom: 96px;
-}
-.swiper-button-prev {
-  width: 68px;
-  height: 68px;
-  border-radius: 60px;
-  border: 1px solid rgba(250, 250, 250, 1);
-  background-color: rgba(28, 29, 32, 1);
-  color: rgba(250, 250, 250, 1);
-}
-.swiper-button-next {
-  width: 68px;
-  height: 68px;
-  border-radius: 60px;
-  border: 1px solid rgba(250, 250, 250, 1);
-  background-color: rgba(28, 29, 32, 1);
-  color: rgba(250, 250, 250, 1);
+  .swiper-buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 64px;
+    margin-bottom: 96px;
+  }
+  .swiper-button-prev {
+    width: 68px;
+    height: 68px;
+    border-radius: 60px;
+    border: 1px solid rgba(250, 250, 250, 1);
+    background-color: rgba(28, 29, 32, 1);
+  }
+  .swiper-button-next {
+    width: 68px;
+    height: 68px;
+    border-radius: 60px;
+    border: 1px solid rgba(250, 250, 250, 1);
+    background-color: rgba(28, 29, 32, 1);
+  }
 }
