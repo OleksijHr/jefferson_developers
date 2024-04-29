@@ -1,5 +1,5 @@
 .covers-section {
-    /* background-image: url(../img/covers/covers@1.jpg); */
+    background-image: url(../img/covers/covers@1.png);
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -28,7 +28,6 @@
     min-height: 162px;
     margin-right: 32px;
     animation: runImg 35s infinite linear;
-    /* background-color: brown; */
 }
 .covers-list-img{
     display: flex;
