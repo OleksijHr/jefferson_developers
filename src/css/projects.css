@@ -111,6 +111,9 @@ ul {
 
     margin-bottom: 10%;
   }
+  .see-project-button:hover {
+    background-color: #e0373f;
+  }
   .project-picture-container {
     background-color: rgba(36, 37, 39, 1);
     border: 1px solid rgba(36, 37, 39, 1);
@@ -251,6 +254,9 @@ ul {
     margin-left: 32px;
 
     margin-bottom: 10%;
+  }
+  .see-project-button:hover {
+    background-color: #e0373f;
   }
   .project-picture-container {
     background-color: rgba(36, 37, 39, 1);
@@ -402,6 +408,9 @@ ul {
     border-radius: 60px;
 
     margin-bottom: 64px;
+  }
+  .see-project-button:hover {
+    background-color: #e0373f;
   }
   .project-picture-container {
     display: inline-block;
