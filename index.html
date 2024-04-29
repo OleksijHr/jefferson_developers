@@ -23,7 +23,7 @@
     <script type="module" crossorigin src="/jefferson_developers/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/jefferson_developers/assets/vendor-52a7ade3.js">
     <link rel="stylesheet" href="/jefferson_developers/assets/vendor-4e87ff37.css">
-    <link rel="stylesheet" href="/jefferson_developers/assets/index-4d9cab30.css">
+    <link rel="stylesheet" href="/jefferson_developers/assets/index-36a2c623.css">
   </head>
   <body>
     <main>
@@ -36,8 +36,11 @@
         <a class="nav-logo-link" href="#aboutme"
           ><img
             class="navigation-img"
-            src="/jefferson_developers/"
-            srcset="/jefferson_developers/"
+            src="../img/logo/logo-image@1.jpg"
+            srcset="
+              ../img/logo/logo-image@1.jpg 1x,
+              ../img/logo/logo-image@2.jpg 2x
+            "
             alt="jefferson"
             width="80"
             height="80"
@@ -48,7 +51,7 @@
       </div>
       <!-- Hoverable Dropdown -->
       <div class="dropdown">
-        <button class="dropbtn button">Menu</button>
+        <button class="dropbtn">Menu</button>
         <div class="dropdown-content">
           <a href="#aboutme" class="nav-link">About me</a>
           <a href="#benefits" class="nav-link">Benefits</a>
@@ -59,15 +62,19 @@
       <a class="navigation-btn" href="#work-together">Order the project</a>
     </nav>
     <button class="mobile-menu-open" type="button" data-menu-open>
-      <svg class="burger-icon" width="28" height="28">
-        <use href="../img/icons.svg#icon-icon"></use>
+      <svg class="mobile-menu-icon" width="28" height="28">
+        <use href="../img/icons.svg#menu"></use>
       </svg>
     </button>
   </div>
   <!-- MOB MENU -->
   <div class="mob-menu is-hidden" data-menu>
     <div class="container">
-      <button class="mob-menu-close" type="button" data-menu-close>x</button>
+      <button class="mob-menu-close" type="button" data-menu-close>
+        <svg class="mobile-menu-close-icon" width="14" height="14">
+          <use href="../img/icons.svg#close-modal"></use>
+        </svg>
+      </button>
       <div class="mob-menu-list-row">
         <ul class="mob-menu-list">
           <li class="mob-menu-item">
@@ -204,7 +211,7 @@
         <div class="about-me-about-header-n-btn">
           <h3 class="about-me-about-header">ROLE</h3>
           <button class="about-me-btn" type="button">
-            <svg class="about-me-arrow-down" width="20" height="20">
+            <svg class="about-me-arrow-down" width="28" height="28">
               <use href="href=..img/icons.svg#icon-Icon_down"></use>
             </svg>
           </button>
