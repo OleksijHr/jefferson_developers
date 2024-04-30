@@ -92,7 +92,7 @@
 /* Стилі для мобільних пристроїв */
 @media only screen and (min-width: 320px) and (max-width: 375px) {
   .hero {
-    /* height: 812px; Висота для мобільних пристроїв */
+    height: 812px; /* Висота для мобільних пристроїв */
     background-position: -268px center; /* Зсув фону вліво на -268px */
   }
 }
@@ -100,7 +100,7 @@
 /* Стилі для планшетів */
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
   .hero {
-    /* height: 1024px; Висота для планшетів */
+    height: 1024px; /* Висота для планшетів */
     background-position: -147px center; /* Зсув фону вліво на -147px */
   }
   .hero h1 {
@@ -118,7 +118,7 @@
 /* Стилі для десктопів */
 @media only screen and (min-width: 1440px) {
   .hero {
-    /* height: 900px; Висота для десктопів */
+    height: 900px;/* Висота для десктопів */
     background-position: 0 center; /* Фон притиснутий до лівого краю */
   }
   .hero h1 {
