@@ -41,6 +41,7 @@
 }
 
 .buttons-container {
+  margin-top: 183px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -48,11 +49,9 @@
   left: 0;
   right: 0;
   z-index: 2; /* Задаємо порядок шару, щоб контейнер був над фоном */
-  top: 743px;
 }
 
-.social-links,
-.email-container {
+.social-links{
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -62,18 +61,15 @@
 }
 
 
-.social-links li,
-.email-container {
+.social-links li {
   margin-right: 5px;
 }
 
-.social-links li:last-child,
-.email-container {
+.social-links li:last-child{
   margin-right: 0;
 }
 
-.social-links li a,
-.contact-email {
+.social-links li a{
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -88,27 +84,6 @@
   text-align: center;
 }
 
-.contact-email {
-  display: inline-flex;
-  align-items: center;
-  border: 1px solid rgba(250, 250, 250, 0.2);
-  border-radius: 60px;
-  padding: 10px 12px;
-  width: 178px;
-  height: 37px;
-  transition: background-color 0.3s ease;
-  margin-left: 5px;
-  max-width: 200px;
-}
-
-.contact-email a {
-  display: inline-block;
-  line-height: 37px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
 .contact-email:last-child {
   width: auto;
   padding: 0 20px;
@@ -117,7 +92,7 @@
 /* Стилі для мобільних пристроїв */
 @media only screen and (min-width: 320px) and (max-width: 375px) {
   .hero {
-    height: 812px; /* Висота для мобільних пристроїв */
+    /* height: 812px; Висота для мобільних пристроїв */
     background-position: -268px center; /* Зсув фону вліво на -268px */
   }
 }
@@ -125,32 +100,25 @@
 /* Стилі для планшетів */
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
   .hero {
-    height: 1024px; /* Висота для планшетів */
+    /* height: 1024px; Висота для планшетів */
     background-position: -147px center; /* Зсув фону вліво на -147px */
   }
   .hero h1 {
     font-size: 90px;
   }
-  .buttons-container {
-    justify-content: flex-end;
-    top: 937px;
-  }
   .hero-title-container {
     top: 300px;
   }
-  .social-links li a,
-  .contact-email {
-    padding: 18px 20px;
-    width: 55px;
-    height: 55px;
-    font-size: 14px;
+
+  .buttons-container{
+ justify-content: flex-end;
   }
 }
 
 /* Стилі для десктопів */
 @media only screen and (min-width: 1440px) {
   .hero {
-    height: 900px; /* Висота для десктопів */
+    /* height: 900px; Висота для десктопів */
     background-position: 0 center; /* Фон притиснутий до лівого краю */
   }
   .hero h1 {
@@ -165,16 +133,7 @@
     top: 300px;
   }
   .buttons-container {
-    position: absolute; /* Змінено на абсолютне позиціонування */
     justify-content: flex-end;
-    top: 813px;
     z-index: 2; /* Задаємо вищий порядок шару для контейнера з кнопками */
-  }
-  .social-links li a,
-  .contact-email {
-    padding: 18px 20px;
-    width: 55px;
-    height: 55px;
-    font-size: 14px;
   }
 }
