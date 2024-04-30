@@ -1,30 +1,34 @@
- document.addEventListener('DOMContentLoaded', function () {
-    // Отримуємо посилання на модальне вікно та кнопку, яка його відкриває
+document.addEventListener('DOMContentLoaded', function () {
     const modal = document.getElementById('myModal');
-    const openModalBtn = document.getElementById('openModalBtn');
+    const form = document.querySelector('.footer_form'); 
 
-    // Відкриття модального вікна при кліку на кнопку
-    openModalBtn.addEventListener('click', function () {
-      modal.style.display = 'block';
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        //  код для відправки POST-запиту на сервер
+
+       
+        modal.style.display = 'block';
+        form.reset();
     });
 
-    // Закриття модального вікна по кліку на кнопку закриття
+   
     const closeModalBtn = modal.querySelector('.close');
     closeModalBtn.addEventListener('click', function () {
-      modal.style.display = 'none';
+        modal.style.display = 'none';
     });
 
-    // Закриття модального вікна по кліку на backdrop
+    
     window.addEventListener('click', function (event) {
-      if (event.target === modal) {
-        modal.style.display = 'none';
-      }
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
     });
 
-    // Закриття модального вікна по натисканню на клавішу Escape
+   
     window.addEventListener('keydown', function (event) {
-      if (event.key === 'Escape') {
-        modal.style.display = 'none';
-      }
+        if (event.key === 'Escape') {
+            modal.style.display = 'none';
+        }
     });
-  });
+});

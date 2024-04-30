@@ -1,5 +1,5 @@
 .covers-section {
-    background-color: var(--primary-bg-clr);
+    /* background-color: var(--primary-bg-clr); */
     background-image: url(../img/covers/covers@1.png);
     
     background-size: cover;
@@ -81,7 +81,7 @@
         .covers {
         
         left: -436px;
-        top: -518px;
+        top: -650px;
     }
     .covers-list {
         margin-bottom: 56px;
