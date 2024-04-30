@@ -2,8 +2,9 @@
     position: relative;
 }
 .container_title{
+width: 542px;
+
 display: flex;
-flex-direction: column;
 align-content: center;
 margin-bottom: 30px;
 font-weight: 500;
@@ -14,6 +15,9 @@ text-transform: uppercase;
 
 }
 .title-text{
+display: flex;
+flex-wrap: wrap;    
+
 font-weight: 500;
 font-size: 40px;
 line-height: 40px;
