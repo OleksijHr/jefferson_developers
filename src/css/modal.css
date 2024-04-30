@@ -1,0 +1,143 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-window {
+    margin: 15% auto;
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid rgba(250, 250, 250, 0.1);
+    border-radius: 20px;
+    padding:20px;
+    width: 343px;
+    height: 276px;
+    background: #1c1d20;
+}
+.modal-content{
+    width: 279px;
+    height: 148px;
+    margin: 44px 12px;
+}
+
+.close {
+    border: none;
+    background-color: #1c1d20;
+    float: right;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+}
+
+.close svg {
+    fill: none;
+    width: 100%;
+    height: 100%;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-header{
+font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 16px;
+    line-height: 30px; 
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fafafa;
+}
+.modal-dscr{
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px; 
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: rgba(250, 250, 250, 0.6);
+}
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .modal-header {
+        font-family: "Inter Tight", sans-serif;
+        font-weight: 600;
+       font-size: 20px;
+        line-height: 30px; 
+        line-height: 1.5;
+        letter-spacing: -0.02em;
+        text-align: center;
+        color: #fafafa;
+    }
+    
+    .modal-dscr {
+        font-family: "Inter Tight", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px; 
+        line-height: 1.5;
+        letter-spacing: -0.02em;
+        text-align: center;
+        color: rgba(250, 250, 250, 0.6);
+    }
+    .modal-window {
+        border: 1px solid rgba(250, 250, 250, 0.1);
+        border-radius: 20px;
+        padding: 20px;
+        width: 492px;
+        height: 246px;
+    }
+        
+    .modal-content {
+        width: 364px;
+        height: 118px;
+        margin: 44px;
+    }
+}
+/* desltop */
+@media only screen and (min-width: 1200px) {
+    .modal-header {
+       font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        line-height: 1.5;
+        letter-spacing: -0.02em;
+        text-align: center;
+        color: #fafafa;
+    }
+    
+    .modal-dscr {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        line-height: 1.5;
+        letter-spacing: -0.02em;
+        text-align: center;
+        color: rgba(250, 250, 250, 0.6);
+    }
+    
+    .modal-window {
+        border: 1px solid rgba(250, 250, 250, 0.1);
+        border-radius: 20px;
+        padding: 20px;
+        width: 492px;
+        height: 246px;
+    }
+    .modal-content {
+        width: 364px;
+        height: 118px;
+        margin: 44px;
+    }
+}
