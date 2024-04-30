@@ -1,17 +1,22 @@
-<p>
-  Текст “Reviews" є заголовком секції. "Перелік відгуків необхідно реалізувати
-  за допомогою ul у вигляді горизонтального слайдера
-  (https://swiperjs.com/swiper-api). Користувач повинен мати змогу взаємодіяти
-  зі слайдером через мишу, клавіатуру (клавіш Tab та стрілок) або сенсорний
-  екран. У разі досягнення кінця списку елементів, кнопка відповідно до
-  вказаного напрямку повинна бути задізейблена (користувач більше не може
-  взаємодіяти з нею, і вона не реагує на події clickу або натискання клавіші).
-  Задізейблена кнопка візуальною змінюється, що підкреслює її неактивний стан.
-  Перелік відгуків слід отримувати з backendа. Якщо з сервера буде повернута
-  помилка - користувачеві слід повідомити про це за допомогою вспливаючого
-  повідомлення, а замість переліку відгуків відмалювати текст-заглушку ""Not
-  found"""
-</p>
-<section class="reviews-section">
-  <div class="container"></div>
+<section class="reviews-section section" id="reviews">
+  <div class="swiper-reviews-container container">
+    <h2 class="reviews-title-h2">REVIEWS</h2>
+    <div class="swiper-reviews-wrap" id="reviewsWrapper">
+      <ul class="menu-reviews-list-ul list"></ul>
+    </div>
+
+    <!-- button-arrow-left-right -->
+    <div class="swiper-reviews-button-cont disabled-button">
+      <button type="button" class="round-button left-arrow">
+        <svg class="arrow-narrow-left" width="32" height="32">
+          <use href="../img/icons.svg#arrow-left"></use>
+        </svg>
+      </button>
+      <button type="button" class="round-button right-arrow">
+        <svg class="arrow-narrow-right" width="32" height="32">
+          <use href="../img/icons.svg#arrow-right"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
 </section>

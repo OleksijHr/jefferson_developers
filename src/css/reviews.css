@@ -1,0 +1,134 @@
+.reviews-section {
+  margin-bottom: 64px;
+}
+
+.swiper-reviews-wrap {
+  overflow: hidden;
+  /* height: auto; display: block;*/
+}
+
+.reviews-title-h2 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: rgba(250, 250, 250, 0.4);
+  margin-bottom: 32px;
+}
+
+.menu-reviews-list-ul {
+  display: flex;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1999px) {
+  .menu-reviews-list-ul {
+    display: flex;
+    width: calc((100% - 16px) / 2);
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+  .menu-reviews-list-ul {
+    display: flex;
+    width: calc((100% - 48px) / 4);
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+}
+
+.menu-reviews-item-li {
+  display: flex;
+  height: auto;
+  width: 343px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: solid 1px rgba(250, 250, 250, 0.2);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1999px) {
+  .menu-reviews-item-li {
+    width: 344px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+  .menu-reviews-item-li {
+    width: 332px;
+  }
+}
+
+.swiper-slide-reviews {
+  flex-shrink: 0;
+  position: relative;
+  transition-property: transform;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #242527;
+  border-radius: 10%;
+}
+
+.icon-reviews-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  margin: 32px auto auto 24px;
+}
+
+.reviews-title-h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.4px;
+  text-align: left;
+  color: #fafafa;
+  padding-left: 24px;
+}
+.reviews-text {
+  width: 100%;
+  color: rgba(250, 250, 250, 0.6);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+  letter-spacing: -0.02em;
+  margin-bottom: 32px;
+  padding: 8px 24px;
+}
+.swiper-reviews-button-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 12px;
+}
+
+.round-button {
+  background-color: #242527;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(250, 250, 250, 0.503);
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.left-arrow {
+  border: 1px solid rgba(250, 250, 250, 0.4);
+  stroke: #3b3b3b;
+}
+.right-arrow {
+  stroke: #fafafa;
+}
+
+.disabled-button {
+  opacity: 0.9;
+  pointer-events: none;
+  stroke: #3b3b3b;
+}
