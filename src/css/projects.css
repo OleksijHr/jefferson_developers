@@ -9,14 +9,10 @@ ul {
   padding: 0;
 }
 /* Для мобільних пристроїв з шириною від 320px до 375px */
-@media screen and (min-width: 320px) and (max-width: 375px) {
+@media screen and (min-width: 320px) and (max-width: 374px) {
   .swiping-page {
     border-radius: 3%;
-  }
-
-  .swiper-slide {
     background-color: rgba(250, 250, 250, 1);
-    border-radius: 3%;
   }
 
   .projects-title {
@@ -38,7 +34,7 @@ ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 92%;
+
     padding-top: 32px;
 
     align-content: center;
@@ -71,14 +67,13 @@ ul {
   .cross-border-programming {
     box-sizing: border-box;
     margin-left: 32px;
-    margin-right: 38px;
+    margin-right: 32px;
     margin-top: 96px;
     margin-bottom: 10%;
-    padding-right: 12px;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 92%;
 
     align-content: center;
 
@@ -116,11 +111,14 @@ ul {
 
     margin-bottom: 10%;
   }
+  .see-project-button:hover {
+    background-color: #e0373f;
+  }
   .project-picture-container {
     background-color: rgba(36, 37, 39, 1);
     border: 1px solid rgba(36, 37, 39, 1);
     height: 100%;
-    margin-bottom: 10%;
+
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 100px;
@@ -136,7 +134,8 @@ ul {
     align-items: center;
     justify-content: center;
     gap: 12px;
-    margin-bottom: 32px;
+    margin-top: 52px;
+    margin-bottom: 96px;
   }
   .swiper-button-prev {
     width: 52px;
@@ -144,7 +143,6 @@ ul {
     border-radius: 60px;
     border: 1px solid rgba(250, 250, 250, 1);
     background-color: rgba(28, 29, 32, 1);
-    color: rgba(250, 250, 250, 1);
   }
   .swiper-button-next {
     width: 52px;
@@ -152,21 +150,13 @@ ul {
     border-radius: 60px;
     border: 1px solid rgba(250, 250, 250, 1);
     background-color: rgba(28, 29, 32, 1);
-    color: rgba(250, 250, 250, 1);
   }
 }
 /* Для екранів з шириною від 375px до 768px */
-@media screen and (min-width: 375px) and (max-width: 768px) {
-  .section-container {
-    padding: 0 16px;
-  }
+@media screen and (min-width: 375px) {
   .swiping-page {
     border-radius: 3%;
-  }
-
-  .swiper-slide {
     background-color: rgba(250, 250, 250, 1);
-    border-radius: 3%;
   }
 
   .projects-title {
@@ -188,7 +178,7 @@ ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 92%;
+
     padding-top: 32px;
 
     align-content: center;
@@ -228,7 +218,6 @@ ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 92%;
 
     align-content: center;
 
@@ -266,16 +255,19 @@ ul {
 
     margin-bottom: 10%;
   }
+  .see-project-button:hover {
+    background-color: #e0373f;
+  }
   .project-picture-container {
     background-color: rgba(36, 37, 39, 1);
     border: 1px solid rgba(36, 37, 39, 1);
     height: 100%;
-    margin-bottom: 10%;
+
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 100px;
     padding-bottom: 100px;
-    border-bottom-left-radius: 3%; /* Заокруглюємо лівий нижній кут */
+    border-bottom-left-radius: 3%;
     border-bottom-right-radius: 3%;
   }
   .project-picture {
@@ -286,7 +278,8 @@ ul {
     align-items: center;
     justify-content: center;
     gap: 12px;
-    margin-bottom: 32px;
+    margin-top: 52px;
+    margin-bottom: 96px;
   }
   .swiper-button-prev {
     width: 52px;
@@ -294,7 +287,6 @@ ul {
     border-radius: 60px;
     border: 1px solid rgba(250, 250, 250, 1);
     background-color: rgba(28, 29, 32, 1);
-    color: rgba(250, 250, 250, 1);
   }
   .swiper-button-next {
     width: 52px;
@@ -302,7 +294,6 @@ ul {
     border-radius: 60px;
     border: 1px solid rgba(250, 250, 250, 1);
     background-color: rgba(28, 29, 32, 1);
-    color: rgba(250, 250, 250, 1);
   }
 }
 
@@ -310,15 +301,22 @@ ul {
 @media screen and (min-width: 768px) {
   .swiping-page {
     border-radius: 3%;
-    padding-top: 0;
-  }
 
-  .swiper-slide {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     background-color: rgba(250, 250, 250, 1);
     border-radius: 3%;
-    padding-top: 64px;
+  }
+  .container {
+    min-width: 100%;
   }
 
+  .project-interface {
+    display: inline-block;
+    padding-top: 64px;
+  }
   .projects-title {
     margin-left: 32px;
     margin-bottom: 32px;
@@ -332,20 +330,22 @@ ul {
   }
 
   .develop-content-icons {
-    width: 312px;
+    display: inline-flex;
+    flex-direction: row;
+    padding-top: 0;
+    width: 100%;
     height: 55px;
-    margin-left: 64px;
-    display: flex;
+    margin: 0;
+    padding-left: 64px;
+    padding-right: 32px;
 
-    align-content: center;
     gap: 6px;
   }
   .develop-content-icons-item {
     display: inline-block;
     align-content: center;
     justify-content: center;
-    width: 80px;
-    height: 55px;
+
     border: 1px solid rgba(28, 29, 32, 0.2);
 
     font-family: Inter Tight;
@@ -407,13 +407,17 @@ ul {
 
     border-radius: 60px;
 
-    margin-bottom: 10%;
+    margin-bottom: 64px;
+  }
+  .see-project-button:hover {
+    background-color: #e0373f;
   }
   .project-picture-container {
+    display: inline-block;
     background-color: rgba(36, 37, 39, 1);
 
     height: 625px;
-    width: 688px;
+    width: 100%;
 
     padding-left: 45px;
     padding-right: 45px;
@@ -425,11 +429,16 @@ ul {
   .project-picture {
     width: 100%;
   }
+  .project-interface,
+  .project-picture-container {
+    flex: 1;
+  }
   .swiper-buttons-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    margin-top: 64px;
     margin-bottom: 96px;
   }
   .swiper-button-prev {
@@ -438,7 +447,6 @@ ul {
     border-radius: 60px;
     border: 1px solid rgba(250, 250, 250, 1);
     background-color: rgba(28, 29, 32, 1);
-    color: rgba(250, 250, 250, 1);
   }
   .swiper-button-next {
     width: 68px;
@@ -446,33 +454,32 @@ ul {
     border-radius: 60px;
     border: 1px solid rgba(250, 250, 250, 1);
     background-color: rgba(28, 29, 32, 1);
-    color: rgba(250, 250, 250, 1);
   }
 }
 
 /* Для настільних комп'ютерів з шириною від 1440px */
 @media screen and (min-width: 1440px) {
-  div.container {
+  .container {
+    min-width: 100%;
     margin-left: 0px;
     margin-right: 0px;
   }
   .swiping-page {
-    border-radius: 3%;
-  }
+    height: 625px;
 
-  .swiper-slide {
+    border-radius: 3%;
+
     padding-top: 0;
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
+    width: 100%;
     background-color: rgba(250, 250, 250, 1);
     border-radius: 3%;
-    width: 1376px;
-    height: 625px;
   }
   .project-interface {
-    display: flex;
+    display: inline-block;
     flex-direction: column;
+    height: 625px;
   }
   .projects-title {
     width: 284px;
@@ -489,21 +496,21 @@ ul {
   }
 
   .develop-content-icons {
-    margin-top: 64px;
-    width: 312px;
+    display: inline-flex;
+    flex-direction: row;
+    padding-top: 0;
+    width: 100%;
     height: 55px;
-    margin-left: 64px;
-    display: flex;
+    margin: 0;
+    padding-left: 64px;
+    padding-right: 32px;
 
-    align-content: center;
     gap: 6px;
   }
   .develop-content-icons-item {
     display: inline-block;
     align-content: center;
     justify-content: center;
-    width: 80px;
-    height: 55px;
     border: 1px solid rgba(28, 29, 32, 0.2);
 
     font-family: Inter Tight;
@@ -565,21 +572,26 @@ ul {
 
     border-radius: 60px;
 
-    margin-bottom: 10%;
+    margin-bottom: 64px;
   }
   .project-picture-container {
+    display: inline-block;
     background-color: rgba(36, 37, 39, 1);
     border: 1px solid rgba(36, 37, 39, 1);
     height: 625px;
-    width: 688;
-    margin-bottom: 10%;
+    width: 688px;
     padding-left: 45px;
     padding-right: 45px;
     padding-top: 120px;
     padding-bottom: 120px;
     border-bottom-left-radius: 0;
-    border-top-right-radius: 3%; /* Заокруглюємо лівий нижній кут */
+    border-top-right-radius: 3%;
     border-bottom-right-radius: 3%;
+    margin: 0;
+  }
+  .project-interface,
+  .project-picture-container {
+    flex: 1;
   }
   .project-picture {
     width: 100%;
@@ -598,7 +610,6 @@ ul {
     border-radius: 60px;
     border: 1px solid rgba(250, 250, 250, 1);
     background-color: rgba(28, 29, 32, 1);
-    color: rgba(250, 250, 250, 1);
   }
   .swiper-button-next {
     width: 68px;
@@ -606,6 +617,5 @@ ul {
     border-radius: 60px;
     border: 1px solid rgba(250, 250, 250, 1);
     background-color: rgba(28, 29, 32, 1);
-    color: rgba(250, 250, 250, 1);
   }
 }
