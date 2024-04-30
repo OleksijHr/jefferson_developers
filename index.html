@@ -23,13 +23,12 @@
     <script type="module" crossorigin src="/jefferson_developers/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/jefferson_developers/assets/vendor-52a7ade3.js">
     <link rel="stylesheet" href="/jefferson_developers/assets/vendor-4e87ff37.css">
-    <link rel="stylesheet" href="/jefferson_developers/assets/index-ed0d4f0f.css">
+    <link rel="stylesheet" href="/jefferson_developers/assets/index-8a944c91.css">
   </head>
   <body>
-    <main>
-      <!-- Header -->
-      <!-- Aleksandra Cherevko -->
-      <header class="header">
+    <!-- Header -->
+    <!-- Aleksandra Cherevko -->
+    <header class="header">
   <div class="container">
     <nav class="header-navigation">
       <div class="nav-logo">
@@ -51,14 +50,25 @@
       </div>
       <!-- Hoverable Dropdown -->
       <div class="dropdown">
-        <button class="dropbtn">Menu</button>
-        <div class="dropdown-content">
-          <a href="#aboutme" class="nav-link">About me</a>
-          <a href="#benefits" class="nav-link">Benefits</a>
-          <a href="#projects" class="nav-link">Projects</a>
-          <a href="#faq" class="nav-link">FAQ</a>
+        <button class="dropbtn" id="dropdownBtn">Menu</button>
+        <div class="dropdown-content" id="dropdownContent">
+          <ul class="dropdown-content-list">
+            <li class="dropdown-content-item">
+              <a href="#aboutme" class="nav-link">About me</a>
+            </li>
+            <li class="dropdown-content-item">
+              <a href="#benefits" class="nav-link">Benefits</a>
+            </li>
+            <li class="dropdown-content-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="dropdown-content-item">
+              <a href="#faq" class="nav-link">FAQ</a>
+            </li>
+          </ul>
         </div>
       </div>
+
       <a class="navigation-btn" href="#work-together">Order the project</a>
     </nav>
     <button class="mobile-menu-open" type="button" data-menu-open>
@@ -102,7 +112,9 @@
 </header>
 
 
+    <main>
       <!-- Hero -->
+      <!-- Vitalii Velykobrat -->
       <section class="hero">
   <div class="hero-content">
     <h1>Hello.<br> I’m Fullstack developer<br> Lloyd Jefferson.</h1>
