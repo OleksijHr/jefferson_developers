@@ -4,6 +4,25 @@
 import * as api from './api';
 import './swiper';
 
+// import Swiper JS
+import Swiper from 'swiper';
+
+//             обгортка повинна включати усі елементи для свайперу
+//                                    |
+// export const swiper = new Swiper('.swiper', {
+//   // Optional parameters
+//   direction: 'horizontal',
+//   loop: true,
+//   slidesPerView: 2,
+//   slidesPerGroup: 1,
+
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+// });
+
 const reviewsList = document.querySelector('.menu-reviews-list-ul');
 
 api
