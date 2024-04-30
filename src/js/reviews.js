@@ -1,24 +1,44 @@
 // імпортувати з api.js
 // логіка секції
 
-import * as api from "./api";
-import "./swiper";
+import * as api from './api';
+import './swiper';
 
-const reviewsList = document.querySelector(".menu-reviews-list-ul");
+// import Swiper JS
+import Swiper from 'swiper';
 
+//             обгортка повинна включати усі елементи для свайперу
+//                                    |
+// export const swiper = new Swiper('.swiper', {
+//   // Optional parameters
+//   direction: 'horizontal',
+//   loop: true,
+//   slidesPerView: 2,
+//   slidesPerGroup: 1,
 
-api.searchReviews()
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+// });
+
+const reviewsList = document.querySelector('.menu-reviews-list-ul');
+
+api
+  .searchReviews()
   .then(data => {
     console.log(data);
-    reviewsList.insertAdjacentHTML("beforeend", createReviews(data))
+    reviewsList.insertAdjacentHTML('beforeend', createReviews(data));
   })
   .catch(error => {
     console.log(error);
-})
+  });
 
-function createReviews (arrReviews) {
-    return arrReviews.map(({ _id, author, avatar_url, review }) => {
-        return `<li class="menu-reviews-item-li menu-item" id="${_id}">
+function createReviews(arrReviews) {
+  return arrReviews
+    .map(({ _id, author, avatar_url, review }) => {
+      return `<li class="menu-reviews-item-li menu-item swiper-slide-reviews" id="${_id}">
          <img
            class="icon-reviews-img"
            src="${avatar_url}"
@@ -30,8 +50,7 @@ function createReviews (arrReviews) {
            <h3 class="reviews-title-h3">${author}</h3>
            <p class="reviews-text">${review}</p>
          </div>
-      </li>`
+      </li>`;
     })
-    .join("");
+    .join('');
 }
-
