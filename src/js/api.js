@@ -10,12 +10,12 @@ const params = {
 
 //                                          REVIEWS SECTION
 
-export function searchReviews() {
-    return fetch(`${BASE_URL}/${params.get}`)
+export async function searchReviews() {
+    return await fetch(`${BASE_URL}/${params.get}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error(response.status);
             }
-            return response.json();
+             return response.json();
     })
 };

@@ -8,3 +8,4 @@ import "./js/modal";
 import "./js/reviews";
 
 import "./js/accordion";
+import "./js/swiper";
