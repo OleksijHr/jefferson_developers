@@ -26,8 +26,6 @@
 
 @import url('./modal.css');
 
-@import url('./footer.css');
-
 html {
   scroll-behavior: smooth;
 }
@@ -40,7 +38,7 @@ body {
   line-height: 1.5;
   letter-spacing: -0.02em;
   color: var(--primary-txt-clr);
-  background-color: var(--primary-bg-clr);
+  background-color:var(--primary-bg-clr);
 
   margin: 0 auto;
 }
@@ -52,16 +50,17 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
-  .container {
-    padding: 0 16px;
+  .container{
+  padding: 0 16px;
+  max-width: 375px;
   }
   section:not(:last-child) {
     margin-bottom: 64px;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  section:first-child {
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  section:first-child{
     margin-bottom: 64px;
   }
   section:not(:last-child) {
@@ -72,8 +71,8 @@ body {
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  section:first-child {
+@media only screen and (min-width: 1440px) {
+  section:first-child{
     margin-bottom: 96px;
   }
   section:not(:last-child) {
@@ -83,3 +82,4 @@ body {
     max-width: 1440px;
   }
 }
+
