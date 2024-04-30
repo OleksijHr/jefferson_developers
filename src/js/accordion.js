@@ -1,5 +1,11 @@
+
 // import Accordion from 'accordion-js';
 // import 'accordion-js/dist/accordion.min.css';
+
+/*import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
+
+
 
 //                        обгортка на усі елементи до яких повинен застосовуватись
 //                                                  |
@@ -29,5 +35,8 @@ new Accordion('.accordion-container', {
 // accordion.detachEvents();
 
 
+
 // new Accordion(".accordion-container");
+
+// new Accordion(".accordion-container");*/
 
