@@ -1,12 +1,11 @@
 // Mobile menu
-import './js/mobile-menu';
-
-import './js/dropdown';
+import "./js/mobile-menu";
 
 // Modal
-import './js/modal';
+import "./js/modal";
 
 // Reviews
-import './js/reviews';
+import "./js/reviews";
 
-import './js/accordion';
+import "./js/accordion";
+import "./js/swiper";
