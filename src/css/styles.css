@@ -26,8 +26,6 @@
 
 @import url('./modal.css');
 
-@import url('./footer.css');
-
 html {
   scroll-behavior: smooth;
 }
@@ -54,13 +52,14 @@ body {
 @media only screen and (max-width: 767px) {
   .container{
   padding: 0 16px;
+  max-width: 375px;
   }
   section:not(:last-child) {
     margin-bottom: 64px;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
   section:first-child{
     margin-bottom: 64px;
   }
@@ -72,7 +71,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1440px) {
   section:first-child{
     margin-bottom: 96px;
   }

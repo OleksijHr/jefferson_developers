@@ -4,15 +4,15 @@ const refs = {
   openMenuBtn: document.querySelector('[data-menu-open]'),
   closeMenuBtn: document.querySelector('[data-menu-close]'),
   menu: document.querySelector('[data-menu]'),
+  body: document.querySelector('body'),
 };
 
-refs.openMenuBtn.addEventListener('click', openModal);
-refs.closeMenuBtn.addEventListener('click', closeModal);
+refs.openMenuBtn.addEventListener('click', toggleModal);
+refs.closeMenuBtn.addEventListener('click', toggleModal);
 
-function openModal() {
-  refs.menu.classList.remove('is-hidden');
-}
-
-function closeModal() {
-  refs.menu.classList.add('is-hidden');
+function toggleModal() {
+  refs.menu.classList.toggle('is-open');
+  if (refs.menu.classList.contains('is-open')) {
+    refs.body.style.overflow = 'hidden';
+  }
 }

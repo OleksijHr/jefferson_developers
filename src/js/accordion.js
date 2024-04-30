@@ -3,13 +3,17 @@
 
 //                        обгортка на усі елементи до яких повинен застосовуватись
 //                                                  |
-// export const accordion = new Accordion('.accordion-container', {
-//   duration: 400,
-//   showMultiple: true,
-//   onOpen: function (currentElement) {
-//     console.log(currentElement);
-//   },
-// });
+
+
+new Accordion('.accordion-container', {
+  duration: 400,
+  showMultiple: true,
+  onOpen: function(currentElement) {
+    console.log(currentElement);
+  }
+});
+
+
 
 // якщо потрібні масиви елеметів, то оберемо іншу версію ініціалізації
 
@@ -23,3 +27,7 @@
 // Detach events
 // const accordion = new Accordion('.container-first');
 // accordion.detachEvents();
+
+
+// new Accordion(".accordion-container");
+
