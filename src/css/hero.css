@@ -10,7 +10,6 @@
 .hero-content {
   text-align: center;
   position: absolute;
-  
 }
 
 .hero h1 {
@@ -21,10 +20,24 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: left;
+  position: relative; /* Збільшення контексту стека з позиціонуванням */
+  z-index: 2; /* Задаємо порядок шару, щоб текст був над фоном */
 }
 
 .hero-title-container {
   position: relative;
+  background-color: transparent; /* Зробити фон прозорим */
+  top: 281px;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1; /* Задаємо порядок шару, щоб фон був позаду тексту */
 }
 
 .buttons-container {
@@ -34,10 +47,9 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 300px;
+  z-index: 2; /* Задаємо порядок шару, щоб контейнер був над фоном */
+  top: 743px;
 }
-
-
 
 .social-links,
 .email-container {
@@ -46,7 +58,9 @@
   list-style-type: none;
   display: flex;
   align-items: center;
+  z-index: 2; /* Задаємо порядок шару, щоб контейнер був над фоном */
 }
+
 
 .social-links li,
 .email-container {
@@ -60,9 +74,9 @@
 
 .social-links li a,
 .contact-email {
-  display: inline-flex; /* Змінився дисплей на inline-flex */
-  justify-content: center; /* Вирівнюємо по горизонталі по центру */
-  align-items: center; /* Вирівнюємо по вертикалі по центру */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
   padding: 10px 12px;
@@ -71,10 +85,8 @@
   font-weight: 500;
   font-size: 14px;
   letter-spacing: -0.02em;
-  text-align: center; /* Для випадку, якщо текст перенесеться на декілька рядків */
+  text-align: center;
 }
-
-
 
 .contact-email {
   display: inline-flex;
@@ -105,59 +117,64 @@
 /* Стилі для мобільних пристроїв */
 @media only screen and (min-width: 320px) and (max-width: 375px) {
   .hero {
-    background-image: url('/src/img/hero/hero_mob@1x.png');
-  }
-}
-
-/* Стилі для ретіна-дисплеїв мобільних пристроїв */
-@media
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi) {
-  .hero {
-    background-image: url('/src/img/hero/hero_mob@2x.png');
+    height: 812px; /* Висота для мобільних пристроїв */
+    background-position: -268px center; /* Зсув фону вліво на -268px */
   }
 }
 
 /* Стилі для планшетів */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
   .hero {
-    background-image: url('/src/img/hero/hero_tab@1x.png');
+    height: 1024px; /* Висота для планшетів */
+    background-position: -147px center; /* Зсув фону вліво на -147px */
+  }
+  .hero h1 {
+    font-size: 90px;
   }
   .buttons-container {
     justify-content: flex-end;
+    top: 937px;
   }
-}
-
-/* Стилі для ретіна-дисплеїв планшетів */
-@media
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi) {
-  .hero {
-    background-image: url('/src/img/hero/hero_tab@2x.png');
+  .hero-title-container {
+    top: 300px;
+  }
+  .social-links li a,
+  .contact-email {
+    padding: 18px 20px;
+    width: 55px;
+    height: 55px;
+    font-size: 14px;
   }
 }
 
 /* Стилі для десктопів */
 @media only screen and (min-width: 1440px) {
   .hero {
-    background-image: url('/src/img/hero/hero_desktop@1x.png');
+    height: 900px; /* Висота для десктопів */
+    background-position: 0 center; /* Фон притиснутий до лівого краю */
   }
-
+  .hero h1 {
+    font-size: 90px;
+  }
   .hero-title-container {
-    text-align: center; /* Вирівнюємо контейнер по центру */
-    position: absolute; /* Змінюємо позицію контейнера на абсолютну */
-    left: 50%; /* Розміщуємо контейнер в центрі відносно батьківського елемента */
-    transform: translateX(-50%); /* Зсуваємо контейнер на половину своєї власної ширини вліво */
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; /* Задаємо вищий порядок шару для заголовка */
+    top: 300px;
   }
-
-
-}
-
-/* Стилі для ретіна-дисплеїв десктопів */
-@media
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi) {
-  .hero {
-    background-image: url('/src/img/hero/hero_desktop@2x.png');
+  .buttons-container {
+    position: absolute; /* Змінено на абсолютне позиціонування */
+    justify-content: flex-end;
+    top: 813px;
+    z-index: 2; /* Задаємо вищий порядок шару для контейнера з кнопками */
+  }
+  .social-links li a,
+  .contact-email {
+    padding: 18px 20px;
+    width: 55px;
+    height: 55px;
+    font-size: 14px;
   }
 }
