@@ -24,7 +24,7 @@
     <script type="module" crossorigin src="/jefferson_developers/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/jefferson_developers/assets/vendor-793b568a.js">
     <link rel="stylesheet" href="/jefferson_developers/assets/vendor-6b1a4e74.css">
-    <link rel="stylesheet" href="/jefferson_developers/assets/index-4af2eef0.css">
+    <link rel="stylesheet" href="/jefferson_developers/assets/index-35967d42.css">
   </head>
 
   <body>
@@ -205,20 +205,24 @@
       </picture>
     </div>
 
-    <ul class="about-me-about-list about-me-about accordion-container">
+    <ul class="about-me-about-list accordion-container">
       <li class="about-me-about-list-item ac">
         <div class="about-me-about-header-n-btn ac-header">
           <h3 class="about-me-about-header">ABOUT ME</h3>
-          <button class="about-me-btn ac-trigger" type="button">
-            <svg class="about-me-arrow-up" width="20" height="20">
+          <button
+            class="about-me-btn ac-trigger"
+            aria-label="open and close text"
+            type="button"
+          >
+            <svg class="about-me-arrow-up about-me-svg" width="20" height="20">
               <use href="/jefferson_developers/assets/icons-c363e33d.svg#Icon_up"></use>
             </svg>
           </button>
         </div>
 
         <div class="ac-panel">
-          <ul class="about-me-about-panel about-me-about-text-box ac-text">
-            <li class="about-me-about-text">
+          <ul class="ac-text about-me-about-text-box">
+            <li class="about-me-about-text about-me-about-text-margin">
               I am Lloyd Jefferson, a talented programmer with extensive
               expertise in software development. I have an understanding of
               different programming languages and technologies, always ready to
@@ -246,15 +250,22 @@
       <li class="about-me-about-list-item ac">
         <div class="about-me-about-header-n-btn ac-header">
           <h3 class="about-me-about-header">ROLE</h3>
-          <button class="about-me-btn ac-trigger" type="button">
-            <svg class="about-me-arrow-down" width="20" height="20">
+          <button
+            class="about-me-btn ac-trigger"
+            aria-label="open and close text"
+            type="button"
+          >
+            <svg
+              class="about-me-arrow-down about-me-svg"
+              width="20"
+              height="20"
+            >
               <use href="/jefferson_developers/assets/icons-c363e33d.svg#Icon_down"></use>
             </svg>
           </button>
         </div>
-
         <div class="ac-panel">
-          <ul class="about-me-about-panel about-me-about-text ac-text">
+          <ul class="ac-text about-me-about-text-box">
             <li class="about-me-about-role">Frontend development</li>
             <li class="about-me-about-role">HeadlessCMS,Wordpress</li>
             <li class="about-me-about-role">Blender(enjoy)</li>
@@ -265,24 +276,32 @@
       <li class="about-me-about-list-item ac">
         <div class="about-me-about-header-n-btn ac-header">
           <h3 class="about-me-about-header">EDUCATION</h3>
-          <button class="about-me-btn ac-trigger" type="button">
-            <svg class="about-me-arrow-down" width="20" height="20">
+          <button
+            class="about-me-btn ac-trigger"
+            aria-label="open and close text"
+            type="button"
+          >
+            <svg
+              class="about-me-arrow-down about-me-svg"
+              width="20"
+              height="20"
+            >
               <use href="/jefferson_developers/assets/icons-c363e33d.svg#Icon_down"></use>
             </svg>
           </button>
         </div>
 
         <div class="ac-panel">
-          <ul class="about-me-about-panel about-me-about-text ac-text">
-            <li class="about-me-about-education">
+          <ul class="ac-text about-me-about-text-box">
+            <li class="about-me-about-text about-me-about-education">
               2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
               York
             </li>
-            <li class="about-me-about-education">
+            <li class="about-me-about-text about-me-about-education">
               2019 - 2020 / Advanced Web Development Certificate, GoIT IT
               School, New York
             </li>
-            <li class="about-me-about-education">
+            <li class="about-me-about-text about-me-about-education">
               2020 - 2022 / Advanced Blender Animation Techniques, Udemy
             </li>
           </ul>
@@ -290,26 +309,40 @@
       </li>
     </ul>
 
-    <div class="about-me-swiper-box">
-      <ul class="about-me-skillslist">
-        <li class="about-me-skillslist-item about-me-skillslist-text">
+    <div class="about-me-swiper-box swiper">
+      <ul class="about-me-skillslist swiper-wraper">
+        <li
+          class="about-me-skillslist-item about-me-skillslist-text swiper-slide"
+        >
           HTML/CSS
         </li>
-        <li class="about-me-skillslist-item about-me-skillslist-text">
+        <li
+          class="about-me-skillslist-item about-me-skillslist-text swiper-slide"
+        >
           JavaScript
         </li>
-        <li class="about-me-skillslist-item about-me-skillslist-text">React</li>
-        <li class="about-me-skillslist-item about-me-skillslist-text">
+        <li
+          class="about-me-skillslist-item about-me-skillslist-text swiper-slide"
+        >
+          React
+        </li>
+        <li
+          class="about-me-skillslist-item about-me-skillslist-text swiper-slide"
+        >
           Node. js
         </li>
-        <li class="about-me-skillslist-item about-me-skillslist-text">
+        <li
+          class="about-me-skillslist-item about-me-skillslist-text swiper-slide"
+        >
           React Native
         </li>
-        <li class="about-me-skillslist-item about-me-skillslist-text">
+        <li
+          class="about-me-skillslist-item about-me-skillslist-text swiper-slide"
+        >
           Soft skills
         </li>
       </ul>
-      <button class="about-me-btn-swiper" type="button">
+      <button class="about-me-btn-swiper swiper-button-next" type="button">
         <svg class="about-me-arrow-right" width="40" height="40">
           <use href="/jefferson_developers/assets/icons-c363e33d.svg#arrow-right"></use>
         </svg>
