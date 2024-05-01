@@ -21,8 +21,22 @@ await api
     const swiper = new Swiper('.swiper-reviews-wrap', {
       direction: 'horizontal',
       modules: [Navigation],
-      slidesPerView: 2,
-      spaceBetween: 30,
+      slidesPerView: 1,
+      spaceBetween: 16,
+      breakpoints: {
+        // when window width is >= 320px
+        375: {
+          slidesPerView: 1,
+        },
+        // when window width is >= 480px
+        768: {
+          slidesPerView: 2,
+        },
+        // when window width is >= 640px
+        1440: {
+          slidesPerView: 4,
+        },
+      },
 
       navigation: {
         nextEl: '.swiper-button-next',
