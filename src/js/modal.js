@@ -1,14 +1,14 @@
 const body = document.body;
 const modal = document.getElementById('myModal');
 const form = document.querySelector('.footer_form'); 
+const submitBtn = document.querySelector('.btm-submit');
 
-document.addEventListener('DOMContentLoaded', function () {
+submitBtn.addEventListener('click', function () {
 
     form.addEventListener('submit', function (event) {
         event.preventDefault();
 
-        //  код для відправки POST-запиту на сервер
-
+        
        
         modal.style.display = 'block';
         hideScroll();
