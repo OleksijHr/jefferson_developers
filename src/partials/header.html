@@ -5,34 +5,46 @@
         <a class="nav-logo-link" href="#aboutme"
           ><img
             class="navigation-img"
-            src="../img/logo/logo-image@1.jpg"
+            src="./img/logo/logo-image@2.jpg"
             srcset="
-              ../img/logo/logo-image@1.jpg 1x,
-              ../img/logo/logo-image@2.jpg 2x
+              ./img/logo/logo-image@1.jpg 1x,
+              ./img/logo/logo-image@2.jpg 2x
             "
             alt="jefferson"
             width="80"
             height="80"
-        /></a>
-        <p class="nav-text">
-          jefferson <span class="nav-text-star">&#10033;</span>
-        </p>
+          />
+          <p class="nav-text">
+            jefferson <span class="nav-text-star">&#10033;</span>
+          </p></a
+        >
       </div>
       <!-- Hoverable Dropdown -->
       <div class="dropdown">
-        <button class="dropbtn">Menu</button>
-        <div class="dropdown-content">
-          <a href="#aboutme" class="nav-link">About me</a>
-          <a href="#benefits" class="nav-link">Benefits</a>
-          <a href="#projects" class="nav-link">Projects</a>
-          <a href="#faq" class="nav-link">FAQ</a>
+        <button class="dropbtn" id="dropdownBtn">Menu</button>
+        <div class="dropdown-content" id="dropdownContent">
+          <ul class="dropdown-content-list">
+            <li class="dropdown-content-item">
+              <a href="#aboutme" class="nav-link">About me</a>
+            </li>
+            <li class="dropdown-content-item">
+              <a href="#benefits" class="nav-link">Benefits</a>
+            </li>
+            <li class="dropdown-content-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="dropdown-content-item">
+              <a href="#faq" class="nav-link">FAQ</a>
+            </li>
+          </ul>
         </div>
       </div>
+
       <a class="navigation-btn" href="#work-together">Order the project</a>
     </nav>
     <button class="mobile-menu-open" type="button" data-menu-open>
       <svg class="mobile-menu-icon" width="28" height="28">
-        <use href="../img/icons.svg#menu"></use>
+        <use href="./img/icons.svg#menu"></use>
       </svg>
     </button>
   </div>
@@ -41,7 +53,7 @@
     <div class="container">
       <button class="mob-menu-close" type="button" data-menu-close>
         <svg class="mobile-menu-close-icon" width="14" height="14">
-          <use href="../img/icons.svg#close-modal"></use>
+          <use href="./img/icons.svg#close-modal"></use>
         </svg>
       </button>
       <div class="mob-menu-list-row">

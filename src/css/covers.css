@@ -1,18 +1,20 @@
 .covers-section {
-    /* background-image: url(../img/covers/covers@1.jpg); */
+    /* background-color: var(--primary-bg-clr); */
+    background-image: url(../img/covers/covers@1.png);
+    
     background-size: cover;
     background-position: center;
     overflow: hidden;
     min-width: 320px;
     max-height: 508px;
-   
+    
 }
 
 .covers {
     position: relative;
     /* min-width: 320px; */
     /* height: 508px; */
-    left: -50px;
+    /* left: -50px; */
     top: -84px;
 }
 
@@ -28,7 +30,6 @@
     min-height: 162px;
     margin-right: 32px;
     animation: runImg 35s infinite linear;
-    /* background-color: brown; */
 }
 .covers-list-img{
     display: flex;
@@ -80,7 +81,7 @@
         .covers {
         
         left: -436px;
-        top: -518px;
+        top: -650px;
     }
     .covers-list {
         margin-bottom: 56px;
