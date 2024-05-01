@@ -1,6 +1,6 @@
 .covers-section {
     /* background-color: var(--primary-bg-clr); */
-    background-image: url(../img/covers/covers@1.png);
+    background-image: url(./img/covers/covers@1.png);
     
     background-size: cover;
     background-position: center;
