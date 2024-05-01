@@ -24,7 +24,7 @@
     <script type="module" crossorigin src="/jefferson_developers/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/jefferson_developers/assets/vendor-793b568a.js">
     <link rel="stylesheet" href="/jefferson_developers/assets/vendor-6b1a4e74.css">
-    <link rel="stylesheet" href="/jefferson_developers/assets/index-424718b2.css">
+    <link rel="stylesheet" href="/jefferson_developers/assets/index-3aabdbbf.css">
   </head>
 
   <body>
@@ -2180,14 +2180,14 @@
           height="70"
         />
         <h3 class="title-text">
-          Let&#697;s<span class="title-work"> work </span>
+          Le&#8242;s<span class="title-work"> work </span>
         </h3>
       </div>
       <p class="title-text">together</p>
     </div>
     <form class="footer_form">
       <input
-        class="header-input"
+        class="header-input input-before"
         type="email"
         name="email-form"
         id="email-form"
@@ -2195,6 +2195,7 @@
         required
         placeholder="email"
       />
+      <span></span>
       <input
         class="header-input"
         type="text"
@@ -2216,18 +2217,21 @@
 
 
     <!-- Modal window -->
-    <div class="backdrop">
-  <div class="modal-header">
-    <h2 class="modal-titel">Thank you for your interest in cooperation!</h2>
-    <p class="modal-p">
-      The manager will contact you shortly to discuss further details and
-      opportunities for cooperation. Please stay in touch.
-    </p>
+    <div id="myModal" class="modal">
+  <div class="modal-window">
     <button class="close" type="button">
-      <svg class="modal-svg" width="24" height="24">
-        <use href="/jefferson_developers/assets/icons-c363e33d.svg#close-modal"></use>
+      <svg>
+        <use href="../img/icons.svg#close-modal" width="24" height="24"></use>
       </svg>
     </button>
+    <div class="modal-content">
+      <h2 class="modal-header">Thank you for your interest in cooperation!</h2>
+
+      <p class="modal-dscr">
+        The manager will contact you shortly to discuss further details and
+        opportunities for cooperation. Please stay in touch.
+      </p>
+    </div>
   </div>
 </div>
 
