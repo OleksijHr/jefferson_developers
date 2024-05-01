@@ -23,7 +23,3 @@ import './js/faq';
 
 import './js/accordion';
 
-
-import "./js/accordion";
-import "./js/swiper";
-

@@ -1,6 +1,3 @@
-import Accordion from 'accordion-js';
-import 'accordion-js/dist/accordion.min.css';
+import { accordionFaq } from "./accordion";
 
-const container = document.querySelector('.accordion-container');
-
-new Accordion(container, {});
+accordionFaq;

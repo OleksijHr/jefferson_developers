@@ -1,6 +1,6 @@
-import { sendFormDataToServer } from "../js/validate-form"
+import { sendFormDataToServer } from "./validate-form"
 const body = document.body;
-const modal = document.getElementById('myModal');
+const modal = document.querySelector('.backdrop');
 const form = document.querySelector('.footer_form'); 
 
 document.addEventListener('DOMContentLoaded', function () {
