@@ -1,22 +1,25 @@
-// Імпортуйте Swiper
+// import Swiper
 import Swiper from 'swiper';
+import { Navigation } from 'swiper/modules';
 // import Swiper styles
 import 'swiper/css';
-// Ініціалізуйте Swiper на вашому контейнері
+//inicialization of Swiper на вашому контейнері
 const mySwiper = new Swiper('.swiper-container', {
-  // Налаштування Swiper
-  // Наприклад:
+  // settings Swiper
+
+  modules: [Navigation],
+
   direction: 'horizontal',
   slidesPerView: 1,
   slidesPerGroup: 1,
-  spaceBetween: 10,
+  spaceBetween: 0,
   loop: false,
-  autoHeight: true,
-  // Додайте інші налаштування за потреби
+  autoHeight: false,
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 });
 
-// Якщо вам потрібно отримати доступ до ініціалізованого Swiper пізніше, ви можете зберегти його в змінну
-// наприклад, для використання у подальших діях:
-// mySwiper.slideNext();
-// mySwiper.slidePrev();
-// і т.д.
+

@@ -1,10 +1,3 @@
-.projects-section-container {
-  background-color: #1c1d20;
-
-  display: flex;
-  flex-direction: column;
-}
-
 ul {
   list-style: none;
   padding: 0;
@@ -19,6 +12,7 @@ ul {
   .swiping-page {
     border-radius: 3%;
     background-color: rgba(250, 250, 250, 1);
+    margin-bottom: 52px;
   }
 
   .projects-title {
@@ -123,12 +117,12 @@ ul {
   .project-picture-container {
     background-color: rgba(36, 37, 39, 1);
     border: 1px solid rgba(36, 37, 39, 1);
-    height: fit-content;
+    height: 395px;
 
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: auto;
+    align-content: center;
+    justify-content: center;
+
     border-bottom-left-radius: 3%;
     border-bottom-right-radius: 3%;
   }
@@ -140,7 +134,6 @@ ul {
     align-items: center;
     justify-content: center;
     gap: 12px;
-    margin-top: 52px;
   }
   .swiper-button-prev {
     width: 52px;
@@ -162,6 +155,7 @@ ul {
   .swiping-page {
     border-radius: 3%;
     background-color: rgba(250, 250, 250, 1);
+    margin-bottom: 52px;
   }
   .swiper-container {
     width: 100%;
@@ -271,12 +265,11 @@ ul {
   .project-picture-container {
     background-color: rgba(36, 37, 39, 1);
     border: 1px solid rgba(36, 37, 39, 1);
-    height: 100%;
+    height: 395px;
 
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: auto;
+    align-content: center;
+    justify-content: center;
     border-bottom-left-radius: 3%;
     border-bottom-right-radius: 3%;
   }
@@ -288,7 +281,6 @@ ul {
     align-items: center;
     justify-content: center;
     gap: 12px;
-    margin-top: 52px;
   }
   .swiper-button-prev {
     width: 52px;
@@ -307,24 +299,30 @@ ul {
 }
 
 /* Для планшетів з шириною від 768px */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1440px) {
   .swiping-page {
     border-radius: 3%;
 
-    padding-top: 0;
+    padding: 0;
     display: flex;
+    justify-content: space-between;
+    height: max-content;
     flex-direction: column;
     width: 100%;
+
     background-color: rgba(250, 250, 250, 1);
     border-radius: 3%;
+    margin-bottom: 64px;
   }
   .swiper-container {
     width: 100%;
-    height: auto;
+
     overflow: hidden;
+    height: auto;
   }
-  */ .project-interface {
-    display: inline-block;
+  .project-interface {
+    display: inline-flex;
+    flex-direction: column;
     padding-top: 64px;
   }
   .projects-title {
@@ -414,7 +412,7 @@ ul {
     text-align: center;
 
     opacity: 0px;
-
+    padding: auto;
     border-radius: 60px;
 
     margin-bottom: 64px;
@@ -425,31 +423,24 @@ ul {
   .project-picture-container {
     display: inline-block;
     background-color: rgba(36, 37, 39, 1);
-
-    height: 625px;
     width: 100%;
-
-    padding-left: 45px;
-    padding-right: 45px;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    height: 625px;
+    padding: auto;
     border-bottom-left-radius: 3%;
     border-bottom-right-radius: 3%;
+    flex: 1;
   }
   .project-picture {
-    width: 100%;
+    height: max-content;
+    width: max-content;
+    margin: auto;
   }
-  .project-interface,
-  .project-picture-container {
-    flex: 1;
-    margin-bottom: 0;
-  }
+
   div.swiper-buttons-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
-    margin-top: 64px;
   }
   .swiper-button-prev {
     width: 68px;
@@ -469,34 +460,45 @@ ul {
 
 /* Для настільних комп'ютерів з шириною від 1440px */
 @media screen and (min-width: 1440px) {
+  .projects-section-container {
+    margin: 0 auto;
+
+    width: 1376px;
+  }
   .swiper-container {
-    width: 100%;
-
     overflow: hidden;
-
-    min-width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0;
   }
 
   .swiping-page .swiper-slide {
-    width: fit-content;
-
-    border-radius: 3%;
-
-    padding-top: 0;
     display: flex;
-    flex: 1;
-    flex-direction: row;
 
-    background-color: rgba(250, 250, 250, 1);
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-right: 1px solid rgba(36, 37, 39, 1);
+
+    justify-items: center;
+    justify-content: space-between;
+    padding-top: 0;
+    width: fit-content;
+    flex-grow: 1;
+
     border-radius: 3%;
+  }
+  ul.swiper-gallery.swiper-wrapper {
+    height: 625px;
+    margin: 0;
+    padding: 0;
   }
   .project-interface {
     display: inline-block;
-    flex-direction: column;
+    flex-direction: row;
+    margin: 0;
+    padding-top: 64px;
+
+    flex-grow: 1;
     height: fit-content;
-    width: 698px;
+    width: auto;
   }
   .projects-title {
     width: 284px;
@@ -547,10 +549,10 @@ ul {
   .cross-border-programming {
     box-sizing: border-box;
     margin-left: 64px;
-    margin-right: 38px;
+
     margin-top: 164px;
     margin-bottom: 32px;
-
+    margin-right: 126.7px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -589,29 +591,26 @@ ul {
 
     border-radius: 60px;
   }
+
   .project-picture-container {
     display: inline-block;
     background-color: rgba(36, 37, 39, 1);
-    border: 1px solid rgba(36, 37, 39, 1);
-    height: 625px;
     width: 688px;
-    padding-left: 45px;
-    padding-right: 45px;
-    padding-top: 120px;
-    padding-bottom: 120px;
-    border-bottom-left-radius: 0;
+    height: 100%;
     border-top-right-radius: 3%;
     border-bottom-right-radius: 3%;
-    margin: 0;
-  }
-  .project-interface,
-  .project-picture-container {
+    border-bottom-left-radius: 0%;
+    border-right: 1px solid rgba(36, 37, 39, 1);
     flex: 1;
+    padding: auto;
   }
   .project-picture {
-    width: 100%;
+    display: inline-block;
+
+    overflow: hidden;
+    object-fit: cover;
   }
-  .swiper-buttons-container {
+  div.swiper-buttons-container {
     display: flex;
     align-items: center;
     justify-content: center;
