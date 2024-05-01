@@ -1,8 +1,7 @@
 export function sendFormDataToServer(email, comment) {
   const formData = new FormData();
   formData.append('email', email);
-  formData.append('comment', comment);
- console.log(typeof (formData));
+  formData.append('comment', comment);;
   return fetch('https://portfolio-js.b.goit.study/api/requests', {
     method: 'POST',
     body: convertFormData(formData),
@@ -27,6 +26,3 @@ const convertFormData = formData => {
   });
   return JSON.stringify(object);
 };
-
-
-
