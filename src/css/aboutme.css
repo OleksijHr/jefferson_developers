@@ -1,4 +1,4 @@
-/* /* work&photo */
+/* work&photo */
 .apostrophe {
   content: '\0027';
 }
@@ -114,7 +114,8 @@
   border-right: none;
   border-left: none;
   border-bottom: solid 1px rgba(250, 250, 250, 0.4);
-  margin-bottom: 32px;
+  /* margin-bottom: 32px;
+  padding-bottom: 20px; */
 }
 
 .about-me-about-list.accordion-container
@@ -180,94 +181,75 @@
 }
 
 /* skills-swiper */
-.about-me-swiper-box {
-  padding: 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 100%;
-  height: 130px;
-  overflow: visible;
-  display: flex;
-  gap: 0px;
-  margin: 0;
-}
 
-@media (min-width: 375px) {
-  .about-me-swiper-box {
-    gap: 55px;
-  }
-}
-
-@media (min-width: 768px) {
-  .about-me-swiper-box {
-    width: 704px;
-    height: 200px;
-    gap: 64px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .about-me-swiper-box {
-    width: 1312px;
-    height: 200px;
-    gap: 72px;
-  }
-}
-
-.about-me-skillslist {
-  display: flex;
-  flex-direction: row;
-  width: 260px;
-  height: 130px;
-  overflow: hidden;
-}
-
-@media (min-width: 768px) {
-  .about-me-skillslist {
-    width: 600px;
-    height: 200px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .about-me-skillslist {
-    width: 1200px;
-    height: 200px;
-  }
-}
-
-.about-me-skillslist-item {
-  border-radius: 50%;
-  width: calc(100% / 2);
-  height: 130px;
-  margin-right: 0 !important;
-  display: flex;
+.aboutme-skills-circle {
   justify-content: center;
   align-items: center;
+  background-color: transparent;
   border: 1px solid rgba(250, 250, 250, 0.2);
-  font-family: 'Inter Tight', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: -0.02em;
-  padding: 29px 53px;
-  white-space: nowrap;
+  border-radius: 100px;
+  width: 130px;
+  height: 130px;
+  aspect-ratio: 3/3;
+  cursor: pointer;
+}
+
+.aboutme-skills-swiper.swiper.aboutme-wrapper.swiper-wrapper.aboutme-skills-circle.swiper-slide
+  .aboutme-skills-circle.swiper-slide.swiper-slide-active
+  .aboutme-skills-circle.swiper-slide.swiper-slide-next {
+  width: 130px;
+  height: 130px;
 }
 
 @media (min-width: 768px) {
-  .about-me-skillslist-item {
-    width: calc(100% / 3);
+  .aboutme-skills-circle {
+    width: 200px;
     height: 200px;
-    font-size: 20px;
-    padding: 52px 88px;
   }
 }
 
+.aboutme-wrapper {
+  margin-right: 55px;
+}
+
+.aboutme-wrapper.swiper-wrapper {
+  width: 343px;
+}
+
+.aboutme-skills-circle.swiper-slide {
+  display: flex;
+  /* width: 130px;
+  height: 130px; */
+}
+/* 
+.aboutme-skills-circle.swiper-slide.swiper-slide-active {
+  width: 130px;
+  height: 130px;
+} */
+
+.aboutme-skills-item {
+  font-size: 16px;
+  letter-spacing: -0.02em;
+}
+@media (min-width: 375px) {
+  .aboutme-skills-item {
+    font-size: 20px;
+  }
+}
+
+.aboutme-container-skills {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  /* width: 343px; */
+}
+
 @media (min-width: 1440px) {
-  .about-me-skillslist-item {
-    width: calc(100% / 6);
+  .aboutme-container-skills {
+    margin-left: 32px;
+  }
+  .aboutme-skills-circle {
+    min-width: 200px;
   }
 }
 
@@ -292,13 +274,11 @@
   }
 }
 
-.about-me-arrow-right {
-  fill: var(--third-clr);
-}
-
-.about-me-btn-swiper {
-  background-color: inherit;
+.aboutme-skills-btn.swiper-button-next {
+  background-color: var(--primary-bg-clr);
+  cursor: pointer;
   border: none;
+  margin-left: 55px;
   padding: 0px;
   display: flex;
   margin: 0;
@@ -306,6 +286,58 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (min-width: 768px) {
+  .aboutme-skills-btn {
+    margin-left: 64px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .aboutme-skills-btn {
+    margin-left: 72px;
+  }
+}
+
+.aboutme-skills-btn.swiper-button-next::after {
+  content: '';
+}
+
+@keyframes wiggle-right {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(5px);
+  }
+
+  50% {
+    transform: translateX(-5px);
+  }
+
+  75% {
+    transform: translateX(3px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.aboutme-skills-btn-icon {
+  fill: var(--third-clr);
+  width: 40px;
+  height: 40px;
+  /* animation: wiggle-right 1s infinite; */
+}
+
+/* @media (min-width: 1440px) {
+  .aboutme-skills-btn-icon {
+    width: 40px;
+    height: 40px;
+  }
+} */
 
 .about-me-svg {
   transition: transform 300ms ease;
