@@ -4,12 +4,18 @@
   display: flex;
   flex-direction: column;
 }
+
 ul {
   list-style: none;
   padding: 0;
 }
 /* Для мобільних пристроїв з шириною від 320px до 375px */
 @media screen and (min-width: 320px) and (max-width: 374px) {
+  .swiper-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
   .swiping-page {
     border-radius: 3%;
     background-color: rgba(250, 250, 250, 1);
@@ -117,7 +123,7 @@ ul {
   .project-picture-container {
     background-color: rgba(36, 37, 39, 1);
     border: 1px solid rgba(36, 37, 39, 1);
-    height: 100%;
+    height: fit-content;
 
     padding-left: 16px;
     padding-right: 16px;
@@ -135,7 +141,6 @@ ul {
     justify-content: center;
     gap: 12px;
     margin-top: 52px;
-    margin-bottom: 96px;
   }
   .swiper-button-prev {
     width: 52px;
@@ -157,6 +162,11 @@ ul {
   .swiping-page {
     border-radius: 3%;
     background-color: rgba(250, 250, 250, 1);
+  }
+  .swiper-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
   }
 
   .projects-title {
@@ -279,7 +289,6 @@ ul {
     justify-content: center;
     gap: 12px;
     margin-top: 52px;
-    margin-bottom: 96px;
   }
   .swiper-button-prev {
     width: 52px;
@@ -309,10 +318,11 @@ ul {
     background-color: rgba(250, 250, 250, 1);
     border-radius: 3%;
   }
-  .container {
-    min-width: 100%;
+  .swiper-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
   }
-
   .project-interface {
     display: inline-block;
     padding-top: 64px;
@@ -432,14 +442,14 @@ ul {
   .project-interface,
   .project-picture-container {
     flex: 1;
+    margin-bottom: 0;
   }
-  .swiper-buttons-container {
+  div.swiper-buttons-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
     margin-top: 64px;
-    margin-bottom: 96px;
   }
   .swiper-button-prev {
     width: 68px;
@@ -459,27 +469,34 @@ ul {
 
 /* Для настільних комп'ютерів з шириною від 1440px */
 @media screen and (min-width: 1440px) {
-  .container {
+  .swiper-container {
+    width: 100%;
+
+    overflow: hidden;
+
     min-width: 100%;
     margin-left: 0px;
     margin-right: 0px;
   }
-  .swiping-page {
-    height: 625px;
+
+  .swiping-page .swiper-slide {
+    width: fit-content;
 
     border-radius: 3%;
 
     padding-top: 0;
     display: flex;
+    flex: 1;
     flex-direction: row;
-    width: 100%;
+
     background-color: rgba(250, 250, 250, 1);
     border-radius: 3%;
   }
   .project-interface {
     display: inline-block;
     flex-direction: column;
-    height: 625px;
+    height: fit-content;
+    width: 698px;
   }
   .projects-title {
     width: 284px;
@@ -571,8 +588,6 @@ ul {
     opacity: 0px;
 
     border-radius: 60px;
-
-    margin-bottom: 64px;
   }
   .project-picture-container {
     display: inline-block;
@@ -602,7 +617,6 @@ ul {
     justify-content: center;
     gap: 20px;
     margin-top: 64px;
-    margin-bottom: 96px;
   }
   .swiper-button-prev {
     width: 68px;
