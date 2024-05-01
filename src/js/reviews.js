@@ -1,68 +1,55 @@
 // імпортувати з api.js
 // логіка секції
 
-import Swiper from 'swiper';
-import 'swiper/css';
-import { Navigation } from 'swiper/modules';
 import * as api from './api';
+import './swiper';
 
-// import Swiper and modules styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+// import Swiper JS
+import Swiper from 'swiper';
+
+//             обгортка повинна включати усі елементи для свайперу
+//                                    |
+// export const swiper = new Swiper('.swiper', {
+//   // Optional parameters
+//   direction: 'horizontal',
+//   loop: true,
+//   slidesPerView: 2,
+//   slidesPerGroup: 1,
+
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+// });
 
 const reviewsList = document.querySelector('.menu-reviews-list-ul');
 
-await api
+api
   .searchReviews()
   .then(data => {
+    console.log(data);
     reviewsList.insertAdjacentHTML('beforeend', createReviews(data));
-
-    const swiper = new Swiper('.swiper-reviews-wrap', {
-      direction: 'horizontal',
-      modules: [Navigation],
-      slidesPerView: 1,
-      spaceBetween: 16,
-      breakpoints: {
-        // when window width is >= 320px
-        375: {
-          slidesPerView: 1,
-        },
-        // when window width is >= 480px
-        768: {
-          slidesPerView: 2,
-        },
-        // when window width is >= 640px
-        1440: {
-          slidesPerView: 4,
-        },
-      },
-
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
   })
   .catch(error => {
-    console.log('error', error);
+    console.log(error);
   });
 
 function createReviews(arrReviews) {
   return arrReviews
     .map(({ _id, author, avatar_url, review }) => {
-      return `<li class="menu-reviews-item-li menu-item swiper-slide" id="${_id}">  
-         <img 
-           class="icon-reviews-img" 
-           src="${avatar_url}" 
-           width="48" 
-           height="48" 
-           alt="${author}'s avatar" 
-         /> 
-         <div class="container-reviews-title-text"> 
-           <h3 class="reviews-title-h3">${author}</h3> 
-           <p class="reviews-text">${review}</p> 
-         </div> 
+      return `<li class="menu-reviews-item-li menu-item swiper-slide-reviews" id="${_id}">
+         <img
+           class="icon-reviews-img"
+           src="${avatar_url}"
+           width="48"
+           height="48"
+           alt="${author}'s avatar"
+         />
+         <div class="container-reviews-title-text">
+           <h3 class="reviews-title-h3">${author}</h3>
+           <p class="reviews-text">${review}</p>
+         </div>
       </li>`;
     })
     .join('');

@@ -7,17 +7,13 @@ const params = {
   post: 'requests',
 };
 
-export async function searchReviews() {
-  try {
-    const response = await fetch(`${BASE_URL}/${params.get}`);
+//                                          REVIEWS SECTION
 
+export function searchReviews() {
+  return fetch(`${BASE_URL}/${params.get}`).then(response => {
     if (!response.ok) {
       throw new Error(response.status);
     }
-
     return response.json();
-  } catch (error) {
-    console.error('Error fetching reviews:', error);
-    throw error; // Перенаправлення помилки для обробки на вищих рівнях
-  }
+  });
 }
