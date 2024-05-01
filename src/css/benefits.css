@@ -10,13 +10,11 @@
 
 
   .benefits-div{
-    width: 100vw;
+    width: 100%;
     height: auto;
   }
 
 .benefits-list {
-    width: 100%;
-    flex-direction: column;
     gap: 16px;
     margin-bottom: 32px;
   }
@@ -47,7 +45,6 @@
     border-radius: 20px;
     padding: 24px;
     background-color: #242527;
-    position: relative;
   }
   
 .benefits-text {
@@ -87,30 +84,14 @@
   .button:focus {
     background-color: #ed3b44;
   }
-  
-  @media only screen and (max-width: 767px) {
-    .benefits {
-      padding: 48px 0;
-    }
-  
-    .benefits-list {
-      flex-direction: row;
-      flex-wrap: wrap;
-      margin-bottom: 64px;
-    }
 
-    .benefits-list-item:not(:last-child) {
-        margin-bottom: 16px;
-      }
-  }
-
-  @media only screen and (min-width: 768px) and (max-width: 1199px) {
-    .benefits-list {
+  @media only screen and (min-width: 768px) and (max-width: 1439px) {
+     .benefits-list {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 16px;
-    }
+    } 
 
     .benefits-list-item {
       width: calc((100% - 16px) / 2);
@@ -118,7 +99,10 @@
 
     .button {
         margin-top: 48px;
-    }
+    } 
+        .benefits-btn-box {
+          margin-top: 64px;
+        }
   }
   
   @media only screen and (min-width: 1440px) {
@@ -137,4 +121,7 @@
         flex-wrap: wrap;
         gap: 16px;
 } 
+.benefits-btn-box{
+  margin-top: 64px;
+}
   }
