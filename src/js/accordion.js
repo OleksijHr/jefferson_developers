@@ -1,9 +1,16 @@
+
+// import Accordion from 'accordion-js';
+// import 'accordion-js/dist/accordion.min.css';
+
 /*import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
 
+
 //                        обгортка на усі елементи до яких повинен застосовуватись
 //                                                  |
+
+
 new Accordion('.accordion-container', {
   duration: 400,
   showMultiple: true,
@@ -13,8 +20,8 @@ new Accordion('.accordion-container', {
 });
 
 
-// якщо потрібні масиви елеметів, то оберемо іншу версію ініціалізації
 
+// якщо потрібні масиви елеметів, то оберемо іншу версію ініціалізації
 
 // Define several accordions with the same options (pass an array with selectors)
 // new Accordion(['.container-first', '.container-second'], {});
@@ -27,4 +34,9 @@ new Accordion('.accordion-container', {
 // const accordion = new Accordion('.container-first');
 // accordion.detachEvents();
 
+
+
+// new Accordion(".accordion-container");
+
 // new Accordion(".accordion-container");*/
+
