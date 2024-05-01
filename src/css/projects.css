@@ -323,7 +323,7 @@ ul {
     height: auto;
     overflow: hidden;
   }
-  */ .project-interface {
+  .project-interface {
     display: inline-block;
     padding-top: 64px;
   }
