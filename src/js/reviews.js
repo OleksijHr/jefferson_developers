@@ -13,7 +13,7 @@ import 'swiper/css/pagination';
  
 const reviewsList = document.querySelector('.menu-reviews-list-ul'); 
  
-await api.searchReviews() 
+api.searchReviews() 
   .then(data => { 
     reviewsList.insertAdjacentHTML('beforeend', createReviews(data)); 
     
