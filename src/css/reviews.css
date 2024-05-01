@@ -42,32 +42,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   position: relative;
   margin: 32px;
   padding: 32px;
   gap: 36px;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  color: aqua;
-}
-
-.swiper-reviews-wrap .swiper-button-prev {
-  position: relative;
-  background-color: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 62px;
-  height: 62px;
-  color: greenyellow;
-}
+.swiper-reviews-wrap .swiper-button-prev,
 .swiper-reviews-wrap .swiper-button-next {
   position: relative;
   background-color: transparent;
-  display: flex;
   justify-content: center;
   align-items: center;
   width: 62px;
@@ -75,16 +59,22 @@
 }
 
 .swiper-reviews-wrap .swiper-button-prev::after {
-  width: 62px;
-  height: 62px;
-  display: inline-block;
-
-  content: url('../img/icons.svg#arrow-left');
+  width: 20px;
+  height: 20px;
+  display: block;
+  justify-content: center;
+  text-align: right;
+  align-items: right;
+  color: transparent;
+  text-transform: uppercase;
+  transition: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  content: url ('./img/icons.svg#arrow-left');
 }
 .swiper-reviews-wrap .swiper-button-next::after {
-  width: 62px;
-  height: 62px;
+  width: 20px;
+  height: 20px;
   display: block;
+  color: transparent;
 
-  content: url('./img/icons.svg#arrow-right');
+  content: url ('./img/icons.svg#arrow-right');
 }
