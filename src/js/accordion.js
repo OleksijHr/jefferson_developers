@@ -1,20 +1,17 @@
-import Accordion from 'accordion-js';
-import 'accordion-js/dist/accordion.min.css';
+// import Accordion from 'accordion-js';
+// import 'accordion-js/dist/accordion.min.css';
 
-
-//                        обгортка на усі елементи до яких повинен застосовуватись
-//                                                  |
-new Accordion('.accordion-container', {
-  duration: 400,
-  showMultiple: true,
-  onOpen: function(currentElement) {
-    console.log(currentElement);
-  }
-});
-
+// //                        обгортка на усі елементи до яких повинен застосовуватись
+// //                                                  |
+// new Accordion('.accordion-container', {
+//   duration: 400,
+//   showMultiple: true,
+//   onOpen: function(currentElement) {
+//     console.log(currentElement);
+//   }
+// });
 
 // якщо потрібні масиви елеметів, то оберемо іншу версію ініціалізації
-
 
 // Define several accordions with the same options (pass an array with selectors)
 // new Accordion(['.container-first', '.container-second'], {});
