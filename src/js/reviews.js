@@ -18,7 +18,7 @@ api.searchReviews()
     reviewsList.insertAdjacentHTML('beforeend', createReviews(data)); 
     
 
-    const swiper = new Swiper('.swiper-reviews-wrap', {
+    const reviewsSwiper = new Swiper('.swiper-reviews-wrap', {
       direction: 'horizontal',
       modules: [Navigation],
       slidesPerView: 2,

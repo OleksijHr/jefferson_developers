@@ -194,12 +194,12 @@
   cursor: pointer;
 }
 
-.aboutme-skills-swiper.swiper.aboutme-wrapper.swiper-wrapper.aboutme-skills-circle.swiper-slide
+/* .aboutme-skills-swiper.swiper.aboutme-wrapper.swiper-wrapper.aboutme-skills-circle.swiper-slide
   .aboutme-skills-circle.swiper-slide.swiper-slide-active
   .aboutme-skills-circle.swiper-slide.swiper-slide-next {
   width: 130px;
   height: 130px;
-}
+} */
 
 @media (min-width: 768px) {
   .aboutme-skills-circle {
@@ -211,16 +211,16 @@
 .aboutme-wrapper {
   margin-right: 55px;
 }
-
+/* 
 .aboutme-wrapper.swiper-wrapper {
   width: 343px;
-}
-
+} */
+/* 
 .aboutme-skills-circle.swiper-slide {
   display: flex;
-  /* width: 130px;
-  height: 130px; */
-}
+  width: 130px;
+  height: 130px;
+} */
 /* 
 .aboutme-skills-circle.swiper-slide.swiper-slide-active {
   width: 130px;
@@ -274,7 +274,7 @@
   }
 }
 
-.aboutme-skills-btn.swiper-button-next {
+/* .aboutme-skills-btn.swiper-button-next {
   background-color: var(--primary-bg-clr);
   cursor: pointer;
   border: none;
@@ -285,7 +285,7 @@
   position: static;
   justify-content: center;
   align-items: center;
-}
+} */
 
 @media (min-width: 768px) {
   .aboutme-skills-btn {
@@ -300,7 +300,7 @@
 }
 
 .aboutme-skills-btn.swiper-button-next::after {
-  content: '';
+  display: none;
 }
 
 @keyframes wiggle-right {
