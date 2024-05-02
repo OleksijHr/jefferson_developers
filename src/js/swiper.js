@@ -23,8 +23,7 @@ export const swiperProjects = new Swiper('.projects-swiper-container.swiper', {
   direction: 'horizontal',
   loop: true,
   modules: [Navigation],
-      slidesPerView: 2,
-  spaceBetween: 30,
+  slidesPerView: 1,
       keyboard: {
     enabled: true,
     onlyInViewport: true,
@@ -32,5 +31,14 @@ export const swiperProjects = new Swiper('.projects-swiper-container.swiper', {
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
-      },
+  },
+      
+      a11y: {
+  prevSlideMessage: 'Previous slide',
+  nextSlideMessage: 'Next slide',
+  },
+      
+      mousewheel: {
+    invert: true,
+  },
 });

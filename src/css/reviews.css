@@ -106,13 +106,13 @@
   position: relative;
   margin: 0;
   padding: 0;
-
-    width: 53px;
-      height: 53px;
-
-      border-radius: 50%;
-
-      transition: all var(--anim-fast);
+  
+  width: 53px;
+  height: 53px;
+  
+  border-radius: 50%;
+  
+  transition: all var(--anim-fast);
 }
 
 .swiper-reviews-wrap .reviews-prev-btn,
