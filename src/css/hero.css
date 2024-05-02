@@ -122,6 +122,8 @@
     background-position: 0 center; /* Фон притиснутий до лівого краю */
   }
   .hero h1 {
+    width: 1084px;
+
     font-size: 90px;
   }
   .hero-title-container {
@@ -133,6 +135,8 @@
     top: 300px;
   }
   .buttons-container {
+    margin-bottom: 243px;
+
     justify-content: flex-end;
     z-index: 2; /* Задаємо вищий порядок шару для контейнера з кнопками */
   }
