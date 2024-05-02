@@ -1,6 +1,4 @@
-// Mobile menu
-
-import './js/mobile-menu';
+import './js/faq';
 
 import './js/dropdown';
 
