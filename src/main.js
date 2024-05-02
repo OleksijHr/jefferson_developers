@@ -1,29 +1,16 @@
-// Mobile menu
+// // Mobile menu
 
-import './js/mobile-menu';
+// import './js/mobile-menu';
 
+// import './js/dropdown';
 
+// import './js/mobile-menu';
 
-import './js/dropdown';
+// // Modal
+// import './js/modal';
 
-import "./js/mobile-menu";
-
-
-
-// Modal
-import "./js/modal";
-
-// Reviews
-import "./js/reviews";
-
-
+// // Reviews
+// import './js/reviews';
 
 // FAQs
 import './js/faq';
-
-import './js/accordion';
-
-
-import "./js/accordion";
-import "./js/swiper";
-

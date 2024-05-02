@@ -85,13 +85,17 @@ border-bottom: none;
 border-bottom: 1px solid rgba(250, 250, 250, 0.6);;
 }
 
+.faq-list .ac.faq-list-item:nth-child(2n){
+border-bottom: none;
+}
+
 .accordion-container.faq-list .ac-header{
     padding: 0 32px;
     padding-bottom: 23px;
 }
 
 .faq-list .ac .ac-panel .ac-text{
-    padding: 0 26px;
+    padding: 0 24px;
 }
 
 }

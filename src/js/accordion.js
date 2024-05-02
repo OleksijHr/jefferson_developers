@@ -1,6 +1,11 @@
+<<<<<<< Updated upstream
 
 // import Accordion from 'accordion-js';
 // import 'accordion-js/dist/accordion.min.css';
+=======
+import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
+>>>>>>> Stashed changes
 
 /*import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
