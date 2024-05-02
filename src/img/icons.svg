@@ -9,7 +9,7 @@
   </symbol>
 
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="arrow-left">
-    <path d="M26.666 16H5.334M13.334 24l-8-8 8-8" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M26.666 16H5.334M13.334 24l-8-8 8-8" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
 
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="arrow-right">

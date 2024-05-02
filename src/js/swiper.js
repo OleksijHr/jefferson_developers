@@ -1,22 +1,44 @@
-// Імпортуйте Swiper
-import Swiper from 'swiper';
-// import Swiper styles
-import 'swiper/css';
-// Ініціалізуйте Swiper на вашому контейнері
-const mySwiper = new Swiper('.swiper-container', {
-  // Налаштування Swiper
-  // Наприклад:
+
+import Swiper from 'swiper'; 
+import 'swiper/css'; 
+import { Navigation } from 'swiper/modules'; 
+
+export const swiperAboutMe = new Swiper('.aboutme-container-skills.swiper', {
   direction: 'horizontal',
-  slidesPerView: 1,
-  slidesPerGroup: 1,
-  spaceBetween: 10,
-  loop: false,
-  autoHeight: true,
-  // Додайте інші налаштування за потреби
+  loop: true,
+  modules: [Navigation],
+      slidesPerView: 2,
+  spaceBetween: 30,
+      keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
 });
 
-// Якщо вам потрібно отримати доступ до ініціалізованого Swiper пізніше, ви можете зберегти його в змінну
-// наприклад, для використання у подальших діях:
-// mySwiper.slideNext();
-// mySwiper.slidePrev();
-// і т.д.
+export const swiperProjects = new Swiper('.projects-swiper-container.swiper', {
+  direction: 'horizontal',
+  loop: true,
+  modules: [Navigation],
+  slidesPerView: 1,
+      keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+  },
+      
+      a11y: {
+  prevSlideMessage: 'Previous slide',
+  nextSlideMessage: 'Next slide',
+  },
+      
+      mousewheel: {
+    invert: true,
+  },
+});
